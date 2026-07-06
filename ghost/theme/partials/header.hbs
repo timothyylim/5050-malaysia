@@ -1,0 +1,12 @@
+<div class="wrap">
+    <nav class="site">
+        <a class="logo" href="{{@site.url}}"><img src="{{asset "images/logo.svg"}}" alt="{{@site.title}}"></a>
+        <div class="nav-links">
+            {{#foreach navigation}}
+                <a href="{{url}}" class="{{#if current}}active{{/if}}">{{label}}</a>
+            {{/foreach}}
+            <button class="nav-search" data-ghost-search aria-label="Search">Search</button>
+            <a class="btn" href="{{@custom.signup_form_url}}" target="_blank" rel="noopener">Join the database</a>
+        </div>
+    </nav>
+</div>

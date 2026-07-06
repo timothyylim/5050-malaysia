@@ -1,0 +1,19 @@
+# 50-50 Malaysia routing — upload via Ghost Admin → Settings → Labs → Routes.
+# Preserves the original site's URL structure:
+#   experts   -> /profiles/{slug}/
+#   industries-> /industries/{slug}/
+#
+# Experts are posts tagged with the internal tag #expert; the home page (/) is the
+# collection archive but renders index.hbs (a custom landing, not a post list).
+
+routes:
+
+collections:
+  /:
+    permalink: /profiles/{slug}/
+    template: index
+    filter: 'tag:hash-expert'
+
+taxonomies:
+  tag: /industries/{slug}/
+  author: /authors/{slug}/

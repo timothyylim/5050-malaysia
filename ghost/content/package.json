@@ -1,0 +1,14 @@
+{
+  "name": "fiftyfifty-content-import",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Imports 50-50 Malaysia experts/industries/pages into Ghost via the Admin API.",
+  "scripts": {
+    "dry": "node import.js --dry",
+    "import": "node import.js"
+  },
+  "dependencies": {
+    "@tryghost/admin-api": "^1.13.12",
+    "dotenv": "^16.4.5"
+  }
+}

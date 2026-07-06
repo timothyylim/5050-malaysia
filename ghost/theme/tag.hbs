@@ -1,0 +1,16 @@
+{{!< default}}
+{{! Industry archive — lists the experts (posts) tagged with this industry. }}
+<div class="wrap">
+    <div class="page-head">
+        <div class="crumb"><a href="{{@site.url}}industries/">Industries</a> / {{tag.name}}</div>
+        <h1>{{tag.name}}</h1>
+        <p class="muted">{{plural pagination.total empty='No experts listed yet' singular='% expert listed' plural='% experts listed'}}</p>
+        {{#if tag.description}}<p class="lede-sm">{{tag.description}}</p>{{/if}}
+    </div>
+    <section style="padding-top:26px">
+        <div class="people">
+            {{#foreach posts}}{{> "expert-card"}}{{/foreach}}
+        </div>
+        {{pagination}}
+    </section>
+</div>

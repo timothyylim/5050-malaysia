@@ -1,0 +1,20 @@
+{{!< default}}
+{{! Custom template for the page with slug "industries" — lists every industry with a count. }}
+<div class="wrap">
+    <div class="page-head">
+        <h1>Browse by industry</h1>
+        {{#get "posts" filter="tag:hash-expert" limit="1"}}
+        <p class="muted">{{pagination.total}} women experts across
+            {{#get "tags" filter="visibility:public" limit="50"}}{{pagination.total}}{{/get}} industries. Pick a field to see who’s listed.</p>
+        {{/get}}
+    </div>
+    <section style="padding-top:30px">
+        <div class="ind-grid">
+            {{#get "tags" filter="visibility:public" include="count.posts" order="name asc" limit="50"}}
+                {{#foreach tags}}
+                    <a class="ind-card" href="{{url}}"><h3>{{name}}</h3><span class="count">{{count.posts}}</span></a>
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </section>
+</div>

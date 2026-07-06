@@ -1,0 +1,16 @@
+{{!< default}}
+{{! Generic content page — About, FAQ. }}
+{{#post}}
+<div class="wrap">
+    <div class="page-head">
+        {{#if @page.show_title_and_feature_image}}
+            <h1>{{title}}</h1>
+            {{#if feature_image}}<img class="feature-image" src="{{feature_image}}" alt="{{title}}">{{/if}}
+        {{/if}}
+    </div>
+    <section style="padding-top:20px"><div class="prose gh-content">
+        {{content}}
+        <p style="margin-top:24px"><a class="btn" href="{{@custom.signup_form_url}}" target="_blank" rel="noopener">Join the database →</a></p>
+    </div></section>
+</div>
+{{/post}}

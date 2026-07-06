@@ -1,0 +1,8 @@
+<a class="person" href="{{url}}">
+    <div class="avatar" data-name="{{title}}"></div>
+    <h3>{{title}}</h3>
+    {{#if custom_excerpt}}<div class="role">{{custom_excerpt}}</div>{{/if}}
+    <div class="tags">
+        {{#foreach tags}}{{#unless internal}}<span class="tag">{{name}}</span>{{/unless}}{{/foreach}}
+    </div>
+</a>

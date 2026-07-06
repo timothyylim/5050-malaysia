@@ -1,0 +1,20 @@
+{{!< default}}
+{{! An expert profile. }}
+{{#post}}
+<div class="wrap">
+    <div class="page-head">
+        <div class="crumb"><a href="{{@site.url}}">Experts</a> / {{title}}</div>
+        <div class="profile-head">
+            <div class="avatar avatar-lg" data-name="{{title}}"></div>
+            <h1>{{title}}</h1>
+        </div>
+        <div class="tags">
+            {{#foreach tags}}{{#unless internal}}<a class="tag" href="{{url}}">{{name}}</a>{{/unless}}{{/foreach}}
+        </div>
+    </div>
+    <section style="padding-top:24px">
+        <article class="detail">{{content}}</article>
+        <p style="margin-top:30px"><a class="btn ghost" href="{{@site.url}}">← Back to search</a></p>
+    </section>
+</div>
+{{/post}}

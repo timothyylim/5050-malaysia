@@ -1,0 +1,39 @@
+{{!< default}}
+{{! Home / landing. Uses {{#get}} helpers rather than the collection loop. }}
+<div class="wrap">
+    <header class="hero">
+        <div class="pill">🇲🇾 <span>A directory of <b>women experts</b> across Malaysia</span></div>
+        <h1 class="big">Find a woman expert on <span class="g">any topic.</span></h1>
+        <p class="lede">Journalists, event organisers and policymakers use 50-50 Malaysia to find qualified women to quote, invite and consult — in seconds.</p>
+        <button class="searchbar-btn" data-ghost-search>
+            <span>Search experts by name, topic or field…</span>
+            <span class="btn">Search</span>
+        </button>
+        {{#get "posts" filter="tag:hash-expert" limit="1"}}
+        <p class="hint">Free to use · No account needed · {{pagination.total}} experts across
+            {{#get "tags" filter="visibility:public" limit="50"}}{{pagination.total}}{{/get}} industries</p>
+        <div class="stats">
+            <div><b>{{pagination.total}}</b><span>women experts</span></div>
+            <div><b>{{#get "tags" filter="visibility:public" limit="50"}}{{pagination.total}}{{/get}}</b><span>industries</span></div>
+            <div><b>100%</b><span>women-led</span></div>
+        </div>
+        {{/get}}
+    </header>
+</div>
+
+<section id="browse"><div class="wrap">
+    <div class="sec-title"><h2>Browse by industry</h2><p>Every field where Malaysia needs more women in the room.</p></div>
+    <div class="ind-grid">
+        {{#get "tags" filter="visibility:public" include="count.posts" order="count.posts desc" limit="50"}}
+            {{#foreach tags}}
+                <a class="ind-card" href="{{url}}"><h3>{{name}}</h3><span class="count">{{count.posts}}</span></a>
+            {{/foreach}}
+        {{/get}}
+    </div>
+</div></section>
+
+<section class="join-section"><div class="wrap"><div class="join">
+    <h2>Are you an expert in your field?</h2>
+    <p>Add yourself to the database in a few minutes. One short form — that’s it. The site is updated every two months.</p>
+    <a class="btn" href="{{@custom.signup_form_url}}" target="_blank" rel="noopener">Sign up via Google Form →</a>
+</div></div></section>

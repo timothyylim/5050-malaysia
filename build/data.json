@@ -1,0 +1,3589 @@
+{
+ "profiles": [
+  {
+   "slug": "adhura-husna",
+   "name": "Adhura Husna",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    },
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Disability/accessibility advocate, Islamic economist, BolehSpace, Jawatakuasa Penaja Majlis Belia OKU",
+   "specialisation": "Disability and accessibility studies, economics",
+   "email": "arawiduri@protonmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ahila-ganesan",
+   "name": "Ahila Ganesan",
+   "industries": [
+    {
+     "slug": "architecture-design-built-environment",
+     "name": "Architecture, Design & Built Environment"
+    }
+   ],
+   "role": "Special Projects Lead, Think City",
+   "specialisation": "Urban sustainability",
+   "email": "ahila@hotmail.co.uk",
+   "phone": ""
+  },
+  {
+   "slug": "aida-ismail",
+   "name": "Aida Ismail",
+   "industries": [
+    {
+     "slug": "aviation",
+     "name": "Aviation"
+    }
+   ],
+   "role": "Regional Director, Asia, Hadid International Services",
+   "specialisation": "International engagement, women in aviation empowerment,",
+   "email": "Aida.ismail@hadid.aero",
+   "phone": ""
+  },
+  {
+   "slug": "aidonna-jan-ayub",
+   "name": "Aidonna Jan Ayub",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Deputy Director of Research, Khazanah Research Institute",
+   "specialisation": "International trade, international investment law & policy, international economic law & policy",
+   "email": "jan.ayub@krinstitute.org",
+   "phone": ""
+  },
+  {
+   "slug": "aini-hasanah",
+   "name": "Aini Hasanah",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Researcher, co-founder, Malaysian Primatological Society",
+   "specialisation": "Primatology, conservation management",
+   "email": "ainihasanah.am@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "aira-azhari",
+   "name": "Aira Azhari",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "CEO, Institute for Democracy and Economic Affairs (IDEAS)",
+   "specialisation": "Accountable governance, independent institutions, politics",
+   "email": "aira@ideas.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "alia-jamaluddin",
+   "name": "Alia Jamaluddin",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Legal Associate, Ram Reza & Muhammad",
+   "specialisation": "Conveyancing, property",
+   "email": "alia@rrmlawyers.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "alia-md-ali",
+   "name": "Alia Md Ali",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "Food writer & recipes editor, Periuk",
+   "specialisation": "Malaysian food culture, recipe development",
+   "email": "alia@periuk.my",
+   "phone": ""
+  },
+  {
+   "slug": "alina-abdullah",
+   "name": "Alina Abdullah",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Director, Galeri Shah Alam",
+   "specialisation": "Translation, curator, art writer and critic, painter",
+   "email": "alina.abdulla@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ang-chiew-teng",
+   "name": "Ang Chiew Teng",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Education Program Lead, Project ID",
+   "specialisation": "Student development, character building, lesson design, capacity building, teaching",
+   "email": "chiewteng0114@live.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "angel-lam",
+   "name": "Angel Lam",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Communications consultant, World Bank Group",
+   "specialisation": "International development, public policy",
+   "email": "angellss@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "angeline-tan",
+   "name": "Angeline Tan",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Analyst, Institute of Strategic & International Studies (ISIS) Malaysia",
+   "specialisation": "International Relations, Chinese Foreign Policy, China-Malaysia relations",
+   "email": "angeline@isis.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "anjhula-mya-singh-bais",
+   "name": "Dr Anjhula Mya Singh-Bais",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    },
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "International psychologist, trauma specialist, Fourth Dimension Consultancy, Amnesty International",
+   "specialisation": "Psychology, human rights, trauma, gender",
+   "email": "Admin@internationalpsychology.com",
+   "phone": ""
+  },
+  {
+   "slug": "ann-lee",
+   "name": "Ann Lee",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    },
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "Playwright, academic, researcher, Independent",
+   "specialisation": "Performing Arts, Southeast Asia, history, media",
+   "email": "annlee65@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "arinah-najwa",
+   "name": "Arinah Najwa",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Research Manager, Zak Capital",
+   "specialisation": "Development and political economy",
+   "email": "arinahnaj@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "armina-mispar",
+   "name": "Armina Mispar",
+   "industries": [
+    {
+     "slug": "human-resources",
+     "name": "Human Resources"
+    },
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Head of People Operations, Forest Interactive",
+   "specialisation": "Human capital management, employee wellbeing, workplace best practices",
+   "email": "armina@forest-interactive.com",
+   "phone": ""
+  },
+  {
+   "slug": "ayisha-rahman",
+   "name": "Ts Siti Noraisyah Abd Rahman (Ayisha Rahman)",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Dean, Faculty of Animation and Multimedia, National Academy of Arts, Culture and Heritage (ASWARA)",
+   "specialisation": "Creative Technology; Media Art and Design; Game Studies; ICH Digitalisation",
+   "email": "noraisyah@aswara.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "aysha-ridzuan",
+   "name": "Aysha Ridzuan",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Social Media Consultant, Independent",
+   "specialisation": "Social media management, sports content creation",
+   "email": "aysha.ridzuan@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ayu-abdullah",
+   "name": "Ayu Abdullah",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Co-Executive Director, Energy Action Partners",
+   "specialisation": "Energy access, community development, rural electrification",
+   "email": "aabdullah@enactpartners.org",
+   "phone": ""
+  },
+  {
+   "slug": "azira-aziz",
+   "name": "Azira Aziz",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    },
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Liga Rakyat Demokratik, Messrs Azira Aziz",
+   "specialisation": "Law, legal reform, human rights, public policy",
+   "email": "aziraSABM@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "azlyn-balqis",
+   "name": "Azlyn Balqis",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Digital Content Manager, Astro Radio",
+   "specialisation": "Social media, digital content",
+   "email": "azlyn_balqis@astro.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "balqais-yusoff",
+   "name": "Balqais Yusoff",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Social Protection Expert, Employees Provident Fund (EPF)",
+   "specialisation": "Social protection, strategy, retirement policies, social well-being",
+   "email": "balqais@epf.gov.my",
+   "phone": ""
+  },
+  {
+   "slug": "braema-mathi",
+   "name": "Braema Mathi",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Researcher, Penang Institute",
+   "specialisation": "ASEAN, international law, women's rights, migrants, refugees",
+   "email": "braema@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "catriona-maddocks",
+   "name": "Catriona Maddocks",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    },
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "Creative Director, Catama/Borneo Bengkel",
+   "specialisation": "Craft heritage and practice in East Malaysia, access to arts, rural community development strategies",
+   "email": "Catriona.Catama@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "charis-loke",
+   "name": "Charis Loke",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Illustrator, Artist Programmer, Independent/Arts-ED Penang",
+   "specialisation": "Illustration and book publishing, comics editing, visual sociology, site-based and creative arts education",
+   "email": "charis@charisloke.com",
+   "phone": ""
+  },
+  {
+   "slug": "chen-may-yee",
+   "name": "Chen May Yee",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "APAC Director, Wunderman Thompson Intelligence",
+   "specialisation": "Consumer trends, generational, cultural and technological shifts",
+   "email": "mayyee.chen@wundermanthompson.com",
+   "phone": ""
+  },
+  {
+   "slug": "cheryl-teh",
+   "name": "Cheryl Teh",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Designer, Bloomworks Studio",
+   "specialisation": "Motion graphics designer, calligraphy, engraving",
+   "email": "bloomworks.design@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "chew-mei-yee",
+   "name": "Chew Mei Yee",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Head of Coaching and Support, Teach For Malaysia",
+   "specialisation": "Leadership development, new teacher development, education policies, Malaysian education",
+   "email": "meiyee.chew@teachformalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "chitrah-karthigeyan",
+   "name": "Chitrah Karthigeyan",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Behavioural Neuropsychologist, MindShift Coach, SoulArist Creations",
+   "specialisation": "Behavioural Neuroscience, Emotional Intelligence, Mental Health and Wellbeing, Soft Skills Training",
+   "email": "k.chitrah@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "chong-yee-shan",
+   "name": "Chong Yee Shan",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Industrial relations officer, Diversity Malaysia, Parti Sosialis Malaysia",
+   "specialisation": "Translation, women's worker rights, SOGIE",
+   "email": "yeeshan1984@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "christine-maryanna-gabriel",
+   "name": "Christine Maryanna Gabriel",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Marriage and Family Therapist, Rekindle Center for Systemic Therapy",
+   "specialisation": "Mental health",
+   "email": "christine@rekindletherapy.com",
+   "phone": ""
+  },
+  {
+   "slug": "chua-shen-yi",
+   "name": "Chua Shen Yi",
+   "industries": [
+    {
+     "slug": "sustainable-development",
+     "name": "Sustainable Development"
+    }
+   ],
+   "role": "Research Manager, World Benchmarking Alliance",
+   "specialisation": "corporate accountability, financial systems, ESG",
+   "email": "chuashenyi@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "chye-shu-wen",
+   "name": "Chye Shu Wen",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Associate analyst, Control Risks",
+   "specialisation": "Risk consulting (Malaysia, Indonesia, Australasia)",
+   "email": "shuwen.chye@controlrisks.com",
+   "phone": ""
+  },
+  {
+   "slug": "cindy-peter",
+   "name": "Cindy Peter",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Lecturer, Universiti Malaysia Sarawak, Sarawak Dolphin Project",
+   "specialisation": "Whale and dolphins, coastal marine mammals research",
+   "email": "Pcindy@unimas.my",
+   "phone": ""
+  },
+  {
+   "slug": "clarissa-ai-ling-lee",
+   "name": "Clarissa Ai Ling Lee",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Senior Lecturer, Universiti Malaya",
+   "specialisation": "Media and digital communities, history, philosophy and sociology of artscience, critical design, performance studies",
+   "email": "clarissa.lee@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "clarissa-lim-kye-lee",
+   "name": "Clarissa Lim Kye Lee",
+   "industries": [
+    {
+     "slug": "architecture-design-built-environment",
+     "name": "Architecture, Design & Built Environment"
+    }
+   ],
+   "role": "Lecturer, Architectural Researcher, Malaysian Institute of Art",
+   "specialisation": "Art and architecture, creative industries, interdisciplinary architectural education",
+   "email": "clarissa@mia.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "cybher",
+   "name": "Cybher",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Rights group, Cybher",
+   "specialisation": "Online gender-based violence, outreach, women's rights, NCII survivor support",
+   "email": "info.cybher@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "daniella-zulkifili",
+   "name": "Daniella Zulkifili",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Exco member, Association of Women Lawyers (AWL)",
+   "specialisation": "Sexual harassment, child sexual abuse, sexual and reproductive health and rights",
+   "email": "daniella.zulkifili@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "darshini-kandasamy",
+   "name": "Darshini Kandasamy",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Editor-in-chief, Between The Lines",
+   "specialisation": "Media/news information literacy, journalism",
+   "email": "darshini@tridentmedia.my",
+   "phone": ""
+  },
+  {
+   "slug": "diana-rahman",
+   "name": "Diana Rahman",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Senior Case Counsel, Asian International Arbitration Centre",
+   "specialisation": "Alternative Dispute Resolution",
+   "email": "diana86.sar@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "doris-lim-swee-lian",
+   "name": "Doris Lim Swee Lian",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "Public relations practitioner, Institute of Public Relations Malaysia",
+   "specialisation": "",
+   "email": "dorissllim@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-ajantha-sinniah",
+   "name": "Dr Ajantha Sinniah",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Senior Lecturer, Universiti Malaya",
+   "specialisation": "Biochemical pharmacology",
+   "email": "ajantha.sinniah@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-amira-firdaus",
+   "name": "Dr Amira Firdaus",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Senior lecturer, University Malaya",
+   "specialisation": "Higher education, adult ADHD, digital ethnography",
+   "email": "amira_firdaus@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-amrita-malhi",
+   "name": "Dr Amrita Malhi",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Researcher, Policy Adviser, Australian National University",
+   "specialisation": "Malaysian history & politics (colonial & postcolonial), international development",
+   "email": "amrita.malhi@anu.edu.au",
+   "phone": ""
+  },
+  {
+   "slug": "dr-asha-rathina-pandi",
+   "name": "Dr Asha Rathina Pandi",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Lecturer, National University of Singapore",
+   "specialisation": "Sociology, health communications, social change and justice",
+   "email": "asha5115@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-ayame-suzuki",
+   "name": "Dr Ayame Suzuki",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Professor, Doshisha University",
+   "specialisation": "Political regimes, public finance, diplomacy",
+   "email": "ayame.suzuki.t@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-azza-basarudin",
+   "name": "Dr Azza Basarudin",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Associate Professor, California State University Long Beach",
+   "specialisation": "transnational feminisms, gender and sexuality in Islam/Muslim cultures, human rights, social movements, gender and counterterrorism",
+   "email": "azza.basarudin@csulb.edu",
+   "phone": ""
+  },
+  {
+   "slug": "dr-charis-quay-huei-li",
+   "name": "Dr Charis Quay Huei Li",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Maître de conférences (tenured faculty), Université Paris-Saclay (Orsay, France)",
+   "specialisation": "Condensed matter physics, superconductivity, spintronics, mesoscopic physics, 2D materials",
+   "email": "charis.quay@universite-paris-saclay.fr",
+   "phone": ""
+  },
+  {
+   "slug": "dr-chiew-ping-hoo",
+   "name": "Dr Chiew-Ping Hoo",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Co-Founder & Co-Convenor, East Asian International Relations (EAIR) Caucus",
+   "specialisation": "South Korea, North Korea, Malaysia",
+   "email": "cpinghoo@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-haslina-hashim",
+   "name": "Dr Haslina Hashim",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Lecturer, Asia Pacific University",
+   "specialisation": "Creativity, innovation, open ideation, startups",
+   "email": "Haslina.hashim@apu.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-hazariah-mohd-noh",
+   "name": "Dr Hazariah Mohd Noh",
+   "industries": [
+    {
+     "slug": "aviation",
+     "name": "Aviation"
+    }
+   ],
+   "role": "Deputy dean, Malaysian Institute of Aviation Technology",
+   "specialisation": "Aviation",
+   "email": "Hazariah@unikl.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-helena-varkkey",
+   "name": "Dr Helena Varkkey",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Associate Professor of Environmental Politics and Governance, Prince Claus Chairholder for Equity and Development (2025-2027), Universiti Malaya, Erasmus University",
+   "specialisation": "Transboundary Haze, Palm Oil, Climate Change",
+   "email": "helenav@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-izyan-a-wahab",
+   "name": "Dr Izyan A. Wahab",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Lecturer, University Malaya",
+   "specialisation": "Quality use of medicines in elderly",
+   "email": "izyan@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-jamilah-hanum-abdul-khaiyom",
+   "name": "Dr Jamilah Hanum Abdul Khaiyom",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Asst Professor, International Islamic University of Malaysia",
+   "specialisation": "Clinical psychology, depression, anxiety, stress, cognitive behaviour therapy",
+   "email": "hanum@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-juita-mohamad",
+   "name": "Dr Juita Mohamad",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Editor, TIA Editors & Consultancy",
+   "specialisation": "Trade, labour, poverty reduction",
+   "email": "juitatrades@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-khoo-suan-phaik",
+   "name": "Dr Khoo Suan Phaik",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Professor, International Medical University",
+   "specialisation": "Oral pathology",
+   "email": "suanphaik_khoo@imu.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-koh-sin-yee",
+   "name": "Dr Koh Sin Yee",
+   "industries": [
+    {
+     "slug": "geography",
+     "name": "Geography"
+    },
+    {
+     "slug": "migration",
+     "name": "Migration"
+    }
+   ],
+   "role": "Senior Lecturer in Global Studies, Monash University Malaysia",
+   "specialisation": "Migration, citizenship, urbanisation",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "slug": "dr-lee-su-kim",
+   "name": "Dr Lee Su Kim",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "Writer, cultural activist, educator, Independent",
+   "specialisation": "Peranakan culture and heritage, Malaysian culture & identity, Malaysian English",
+   "email": "sukim25@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-lyana-khairuddin",
+   "name": "Dr Lyana Khairuddin",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Political advisor, British High Commission KL",
+   "specialisation": "Virology, public policy",
+   "email": "Lyana.Khairuddin@fcdo.gov.uk",
+   "phone": ""
+  },
+  {
+   "slug": "dr-magaret-sivapragasam",
+   "name": "Dr Magaret Sivapragasam",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Lecturer, Quest International University Perak",
+   "specialisation": "Ionic liquids, biosurfactant, toxicology, downstream processing",
+   "email": "magaret.sivapragasam@qiup.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-mardiana-mohamad",
+   "name": "Dr Mardiana Mohamad",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Senior Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Counseling psychology",
+   "email": "mardiana@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-mariam-adawiah-dzulkifli",
+   "name": "Dr Mariam Adawiah Dzulkifli",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Cognitive psychology",
+   "email": "m.adawiah@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-maude-phipps",
+   "name": "Dr Maude Phipps",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Professor, Monash University",
+   "specialisation": "Human genetics, bioethics",
+   "email": "Maude.Phipps@monash.edu",
+   "phone": ""
+  },
+  {
+   "slug": "dr-mazlan-othman",
+   "name": "Dr Mazlan Othman",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "APAC Director, International Science Council",
+   "specialisation": "Asia and the Pacific",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "slug": "dr-ngeow-yeok-meng",
+   "name": "Dr Ngeow Yeok Meng",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Asst Professor, Universiti Tunku Abdul Rahman",
+   "specialisation": "Teaching and learning",
+   "email": "ngeowym@utar.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-nor-izzatina-abdul-aziz",
+   "name": "Dr Nor Izzatina Abdul Aziz",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Junior Research Fellow, Institute of Malaysian and International Studies, National University of Malaysia",
+   "specialisation": "Behavioral economics, policy evaluation, development economics,",
+   "email": "izzatina.aziz@ukm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-nor-nadiah-abdul-karim-shah",
+   "name": "Dr Nor Nadiah Abdul Karim Shah",
+   "industries": [
+    {
+     "slug": "engineering",
+     "name": "Engineering"
+    }
+   ],
+   "role": "Senior lecturer, University Putra Malaysia",
+   "specialisation": "Food engineering",
+   "email": "nadiahkarim@upm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-noraida-endut",
+   "name": "Dr Noraida Endut",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Professor, Universiti Sains Malaysia",
+   "specialisation": "Violence against women, gender, law and development, women and work, women and syariah",
+   "email": "noraidaendut@usm.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-norfaryanti-kamaruddin",
+   "name": "Dr Norfaryanti Kamaruddin",
+   "industries": [
+    {
+     "slug": "forestry-fisheries",
+     "name": "Forestry & Fisheries"
+    }
+   ],
+   "role": "Researcher, University Putra Malaysia",
+   "specialisation": "Bioresource management",
+   "email": "norfaryanti@upm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-nurazzurah-mohamad-diah",
+   "name": "Dr Nurazzurah Mohamad Diah",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Women's health, disability and minorities, anthropology",
+   "email": "nurazzura@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-rabiah-aminudin",
+   "name": "Dr Rabiah Aminudin",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Gender and politics, politics of identity, public policy, public administration",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "slug": "dr-ruhaya-hussin",
+   "name": "Dr Ruhaya Hussin",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Asst Professor, International Islamic University of Malaysia",
+   "specialisation": "Industrial & organisational psychology, work & family, Coping, employed women",
+   "email": "ruhaya@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-salmi-razali",
+   "name": "Dr Salmi Razali",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Psychiatrist, Universiti Teknologi MARA",
+   "specialisation": "Women and perinatal mental health",
+   "email": "drsalmi@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-sarani-zakaria",
+   "name": "Dr Sarani Zakaria",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Professor, Universiti Kebangsaan Malaysia",
+   "specialisation": "pulp and paper technology, biocomposites, bioplastics, biofuel",
+   "email": "sarani@ukm.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-sarena-che-omar",
+   "name": "Dr Sarena Che Omar",
+   "industries": [
+    {
+     "slug": "agriculture",
+     "name": "Agriculture"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "CEO, PNB Research Institute",
+   "specialisation": "Food security, food policy, agriculture",
+   "email": "sarena@pnb.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-serina-rahman",
+   "name": "Dr Serina Rahman",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Visiting Fellow, ISEAS-Yusof Ishak Institute",
+   "specialisation": "Conservation science, environmental anthropology, rural politics, coastal communities, inclusive sustainable development",
+   "email": "serina_abdul_rahman@iseas.edu.sg",
+   "phone": ""
+  },
+  {
+   "slug": "dr-sharifah-munirah-alatas",
+   "name": "Dr S Munirah Alatas",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Scholar and Researcher, Independent",
+   "specialisation": "geopolitics, foreign policy, decoloniality, post-colonialism, non-Western IR theory, autonomous social science, global IR, governance, human rights, education",
+   "email": "peanutminat@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-sharuna-verghis",
+   "name": "Dr Sharuna Verghis",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    },
+    {
+     "slug": "migration",
+     "name": "Migration"
+    }
+   ],
+   "role": "Senior lecturer, Jeffrey Cheah School of Medicine and Health Sciences",
+   "specialisation": "International migration, human trafficking, forced labor and their health dimensions, acess to health care, health systems, gender responsive health systems, community-based health prevention, community mental healthcare",
+   "email": "sharuna.verghis@monash.edu",
+   "phone": ""
+  },
+  {
+   "slug": "dr-siti-inarah-hasim-hashim",
+   "name": "Dr Siti Inarah Hasim @ Hashim",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Lecturer, Clinical Psychologist, International Islamic University of Malaysia",
+   "specialisation": "Clinical psychology, counselling",
+   "email": "inarahhasim@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-siti-rahyla-rahmat",
+   "name": "Dr Siti Rahyla Rahmat",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Senior lecturer, National Science University of Malaysia",
+   "specialisation": "Environmental economics, development economics",
+   "email": "rahyla@usm.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-subatra-jayaraj",
+   "name": "Dr Subatra Jayaraj",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Doctor, Reproductive Rights Advocacy Alliance Malaysia",
+   "specialisation": "Reproductive rights, health, women's health",
+   "email": "j.subatra@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-suriati-sidek",
+   "name": "Dr Suriati Sidek",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Senior Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Health psychology, community health, community psychology, behavioural science",
+   "email": "suriatisidek@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-surinderpal-kaur",
+   "name": "Dr Surinderpal Kaur",
+   "industries": [
+    {
+     "slug": "language-linguistics",
+     "name": "Language & Linguistics"
+    }
+   ],
+   "role": "Associate Professor, Universiti Malaya",
+   "specialisation": "Discrimination, terrorism, radicalization, right wing discourse, gender issues, migrant issues",
+   "email": "surinder@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-suwita-hani-randhawa",
+   "name": "Dr Suwita Hani Randhawa",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    },
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Senior Lecturer, University of the West of England",
+   "specialisation": "International criminal law, genocide, international crimes",
+   "email": "suwita.hanirandhawa@uwe.ac.uk",
+   "phone": ""
+  },
+  {
+   "slug": "dr-syaza-farhana-mohamad-shukri",
+   "name": "Dr Syaza Farhana Mohamad Shukri",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Asst Professor, International Islamic University of Malaysia",
+   "specialisation": "Comparative politics in the Middle East and Political Islam",
+   "email": "syazashukri@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-sylvia-lim-sze-wei",
+   "name": "Dr Sylvia Lim Sze Wei",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Dentist, Malaysian Dental Council",
+   "specialisation": "Dentistry",
+   "email": "Phidental13@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-tham-siew-yean",
+   "name": "Dr Tham Siew Yean",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Researcher, ISEAS-Yusof Ishak Institute",
+   "specialisation": "International Trade",
+   "email": "tham.siewyean@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-tharishini-krishnan",
+   "name": "Dr Tharishini Krishnan",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Senior lecturer, National Defence University Malaysia",
+   "specialisation": "Malaysia, Southeast Asia, India, South Asia",
+   "email": "tharishini@upnm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-vilashini-somiah",
+   "name": "Dr Vilashini Somiah",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Senior lecturer, University Malaya",
+   "specialisation": "Anthropology, Sabah studies, migrants and mobility, indigenous studies",
+   "email": "vilasomiah@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-vishalache-balakrishnan",
+   "name": "Dr Vishalache Balakrishnan",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Associate professor, University Malaya",
+   "specialisation": "Moral and Civics Education",
+   "email": "visha@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-wan-khatina-nawawi",
+   "name": "Dr Wan Khatina Nawawi",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Director of Economics, Malaysian Aviation Commission",
+   "specialisation": "Competition economics, competition law, regulatory economics, public policy, Asean, microeconomics",
+   "email": "wkhatina@outlook.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-welyne-jeffrey-jehom",
+   "name": "Dr Welyne Jeffrey Jehom",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    },
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Senior lecturer, University Malaya",
+   "specialisation": "Social anthropology, Indigenous knowledge, resettlement and displacement",
+   "email": "welynejj@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-wendy-yee",
+   "name": "Dr Wendy Yee",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Senior lecturer, University Malaya",
+   "specialisation": "Internship training, academic enrichment",
+   "email": "wenyee2000@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "dr-wey-mang-chek",
+   "name": "Dr Wey Mang Chek",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Lecturer, University Malaya",
+   "specialisation": "Orthodontics",
+   "email": "weymc@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "dr-yong-junina-fadzil",
+   "name": "Dr Yong Junina Fadzil",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Doctor, Klinik Pakar Kanak-Kanak Junina",
+   "specialisation": "Paediatrics, Paediatric cardiology",
+   "email": "yongjuninafadzil@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "elina-noor",
+   "name": "Elina Noor",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Senior Fellow, Carnegie Endowment for International Peace",
+   "specialisation": "technology and governance, SEA and major power relations",
+   "email": "elina.noor@ceip.org",
+   "phone": ""
+  },
+  {
+   "slug": "elisa-shafiqah-shahrilnizam",
+   "name": "Elisa Shafiqah Shahrilnizam",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Chair / Youth-led Diplomacy Activist, Malaysian Youth Diplomacy",
+   "specialisation": "Youth-led diplomacy, democratic participation, geopolitical game theory",
+   "email": "elisashafiqahshahrilnizam@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ellisha-rosli",
+   "name": "Ellisha Rosli",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Writer and Multimedia Communicator, COMMUNICATE by PEMANDU",
+   "specialisation": "Writing, communications, branding, marketing",
+   "email": "ellisrosli@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "elvira-carrie-olga-arul",
+   "name": "Elvira Carrie Olga Arul",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Storyteller/Performer & Copywriter, Independent",
+   "specialisation": "Storytelling, performance",
+   "email": "elviraarul@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "emma-zulaiha-zulkifli",
+   "name": "Emma Zulaiha Zulkifli",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Astronomy communicator/Dark Sky activist/AstroTourism consultant, Dark Sky Malaysia",
+   "specialisation": "",
+   "email": "emmazulaiha@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "evelyn-teh",
+   "name": "Evelyn Teh",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Executive Director, Ara Research",
+   "specialisation": "Sustainable development, environmental management, climate change policy, city design and social science",
+   "email": "evelynteh.han@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "farah-fauzi",
+   "name": "Farah Fauzi",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "APAC Regional Manager, Techstars",
+   "specialisation": "Startup communities, startup ecosystem development, regional partnerships, corporate innovation",
+   "email": "farah.fauzi@techstars.com",
+   "phone": ""
+  },
+  {
+   "slug": "farah-hanim-ismail",
+   "name": "Farah Hanim Ismail",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Lecturer, University of Cyberjaya",
+   "specialisation": "Business, technology",
+   "email": "farah.hanim@cyberjaya.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "farlina-said",
+   "name": "Farlina Said",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Analyst, Institute of Strategic and International Studies (ISIS) Malaysia",
+   "specialisation": "Cybersecurity, radicalisation",
+   "email": "farlina@isis.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "fatimah-salim",
+   "name": "Fatimah Salim",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Lecturer, Universiti Teknologi MARA (UiTM)",
+   "specialisation": "Basic chemistry, natural product chemistry, quantum chemistry, medicinal plants",
+   "email": "fatimah2940@uitm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "firdaus-husni",
+   "name": "Firdaus Husni",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Chief Human Rights Strategist, Malaysian Centre for Constitutionalism and Human Rights MCCHR",
+   "specialisation": "Constitutionalism and Human Rights in Malaysia",
+   "email": "firdaus@mcchr.org",
+   "phone": ""
+  },
+  {
+   "slug": "fu-ching-yee",
+   "name": "Fu Ching Yee",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Director of Operations, QS",
+   "specialisation": "International higher education, technology, operations",
+   "email": "chingyee.fu@qs.com",
+   "phone": ""
+  },
+  {
+   "slug": "gaithiri-siva",
+   "name": "Gaithiri Siva",
+   "industries": [
+    {
+     "slug": "philanthropy-impact-finance",
+     "name": "Philanthropy & Impact Finance"
+    }
+   ],
+   "role": "Regional Director (Asia), Porticus",
+   "specialisation": "climate justice, civic participation, finance, philanthropy",
+   "email": "g.siva@porticus.com",
+   "phone": ""
+  },
+  {
+   "slug": "hanniz-lam",
+   "name": "Hanniz Lam",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "Co-Founder, Best Events Productions",
+   "specialisation": "Social commerce",
+   "email": "Hanniz@bestevents-asia.com",
+   "phone": ""
+  },
+  {
+   "slug": "ida-hariati-hashim",
+   "name": "Ida Hariati Hashim",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Executive Director, Malaysian Social Research Institute (MSRI)",
+   "specialisation": "Refugee rights, refugee policy, asylum seekers, mental health",
+   "email": "ida@msri.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "ida-thien",
+   "name": "Ida Thien",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "CEO (YTAR), Co-Founder (CTG), Yayasan Tunku Abdul Rahman, Closing The Gap Malaysia",
+   "specialisation": "Higher education, scholarships , mentoring and youth development",
+   "email": "ida.thien@yayasantar.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "ili-aqilah",
+   "name": "Ili Aqilah",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Journalist, The Star Media Group",
+   "specialisation": "Environment, politics, current affairs, human rights",
+   "email": "iliaqilah@thestar.com",
+   "phone": ""
+  },
+  {
+   "slug": "ili-nadiah-dzulfakar",
+   "name": "Ili Nadiah Dzulfakar",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Chairperson, Klima Action Malaysia",
+   "specialisation": "Climate justice grassroots campaigning",
+   "email": "nadiah@klimaactionmalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "intan-nadia-jalil",
+   "name": "Intan Nadia Jalil",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Regional Head of Group Economics and Markets Analysis, CIMB",
+   "specialisation": "Macroeconomics, political economy, public policy",
+   "email": "nadia.jalil@cimb.com",
+   "phone": ""
+  },
+  {
+   "slug": "intan-safinar-ismail",
+   "name": "Intan Safinar Ismail",
+   "industries": [
+    {
+     "slug": "natural-sciences",
+     "name": "Natural Sciences"
+    }
+   ],
+   "role": "Lecturer, Universiti Putra Malaysia (UPM)",
+   "specialisation": "Natural products chemistry, metabolomics, organic chemistry",
+   "email": "safinar@upm.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "ismat-mohd-sulaiman",
+   "name": "Ismat Mohd Sulaiman",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Doctor, Ministry of Health",
+   "specialisation": "Health informatics",
+   "email": "dr.ismat.md@gmail.com",
+   "phone": "[email protected]"
+  },
+  {
+   "slug": "ivy-kwek",
+   "name": "Ivy Kwek",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Research Director, Research for Social Advancement (REFSA)",
+   "specialisation": "International relations, defence, socioeconomic policy, institutional reform",
+   "email": "ivykwek@refsa.org",
+   "phone": ""
+  },
+  {
+   "slug": "izza-izelan",
+   "name": "Izza Izelan",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Executive Director, WOMEN:girls",
+   "specialisation": "Female equity, community service, gender equality advocacy",
+   "email": "izzaizelan@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "jacqueline-thomas-pereira",
+   "name": "Jacqueline Thomas Pereira",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Lecturer, Taylor’s University",
+   "specialisation": "TESL",
+   "email": "pereira.j@taylors.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "jannie-lasimbang",
+   "name": "Jannie Lasimbang",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Kapayan assemblywoman, Democratic Action Party",
+   "specialisation": "Politics, Sabah, development, women's rights",
+   "email": "jannielasimbang@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "jaskirath-kaur-sohanpal",
+   "name": "Jaskirath Kaur Sohanpal",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Gender consultant, Independent",
+   "specialisation": "",
+   "email": "",
+   "phone": ""
+  },
+  {
+   "slug": "jia-ping-lee",
+   "name": "Jia-Ping Lee",
+   "industries": [
+    {
+     "slug": "transport-urban-planning",
+     "name": "Transport, Urban Planning & Regeneration"
+    }
+   ],
+   "role": "Director, Pollin8, Placemaking Malaysia",
+   "specialisation": "place strategy, urban rejuvenation, organisation culture",
+   "email": "jiaping@pollin8.asia",
+   "phone": ""
+  },
+  {
+   "slug": "juliana-langgat",
+   "name": "Juliana Langgat",
+   "industries": [
+    {
+     "slug": "hospitality-tourism",
+     "name": "Hospitality & Tourism"
+    }
+   ],
+   "role": "Senior Lecturer, Universiti Malaysia Sabah",
+   "specialisation": "Hospitality management, sustainability management, events",
+   "email": "juelanggat@ums.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "kamini-goh-seow-ling",
+   "name": "Kamini Goh Seow Ling",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Media & Partnership Manager, Mr Money TV",
+   "specialisation": "Financial literacy, personal finance",
+   "email": "kaminigoh@mrmoneytv.com",
+   "phone": ""
+  },
+  {
+   "slug": "kanmani-gobal",
+   "name": "Kanmani Gobal",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Senior Business Development Manager, LAW Partnership",
+   "specialisation": "business development and strategy, legal marketing, corporate communications",
+   "email": "kanmanigobal@law-partnership.com",
+   "phone": ""
+  },
+  {
+   "slug": "keana-reinu",
+   "name": "Keana Reinu",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Founder, International Debate & Speaking Coach, Asia Youth Speakers",
+   "specialisation": "Debate, youth education, public speaking",
+   "email": "keanareinu@hotmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "khairul-hanim-pazim",
+   "name": "Khairul Hanim Pazim",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    },
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Lecturer, University Malaysia Sabah",
+   "specialisation": "Labour economics, ageing population studies",
+   "email": "k_hanim@ums.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "khairun-nisa-mohamed-zabidi",
+   "name": "Khairun Nisa Mohamed Zabidi",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Malaysia UK-PACT Lead, International Climate Fund",
+   "specialisation": "Climate change, corporate sustainability, social entrepreneurship, circular economy",
+   "email": "khairun.zabidi@fcdo.gov.uk",
+   "phone": ""
+  },
+  {
+   "slug": "khor-yu-leng",
+   "name": "Khor Yu Leng",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Head of Research for Southeast Asia, Segi Enam Advisors",
+   "specialisation": "Sustainability, ESG, climate change, commodities",
+   "email": "yuleng@hotmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "kokila-vaani-vadiveloo",
+   "name": "Kokila Vaani Vadiveloo",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Kumar Chambers",
+   "specialisation": "Civil litigation",
+   "email": "kokila.vaani7772@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ku-sim-ling",
+   "name": "Ku Sim Ling",
+   "industries": [
+    {
+     "slug": "human-resources",
+     "name": "Human Resources"
+    }
+   ],
+   "role": "Director, Corporate Services, Kelly Services",
+   "specialisation": "Human resources, workforce solutions",
+   "email": "tutuku@live.com",
+   "phone": ""
+  },
+  {
+   "slug": "lainie-yeoh",
+   "name": "Lainie Yeoh",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Editor & Digital Communications Consultant, Independent",
+   "specialisation": "Inclusive digital communications",
+   "email": "lainieyeoh@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "lalitha-wemel",
+   "name": "Lalitha Wemel",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Regional Director (APAC), Techstars",
+   "specialisation": "Entrepreneurship, community building, startup ecosystem development, corporate innovation",
+   "email": "lalitha.wemel@techstars.com",
+   "phone": ""
+  },
+  {
+   "slug": "lana-sulaiman",
+   "name": "Lana Sulaiman",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Messrs Hoe & Ahmad Zaki",
+   "specialisation": "Conveyancing & corporate finance, business, hospitality",
+   "email": "lubnasulaim@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "lennise-ng",
+   "name": "Lennise Ng",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Chief Executive Officer, Dropee",
+   "specialisation": "",
+   "email": "lennise@dropee.com",
+   "phone": ""
+  },
+  {
+   "slug": "lesley-lim-ai-li",
+   "name": "Lesley Lim Ai Li",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    },
+    {
+     "slug": "sports",
+     "name": "Sports"
+    }
+   ],
+   "role": "Advocate & Solicitor, MahWengKwai & Associates",
+   "specialisation": "Sports Law",
+   "email": "lesley.lim@mahwengkwai.com",
+   "phone": ""
+  },
+  {
+   "slug": "lilianne-fan",
+   "name": "Lilianne Fan",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Co-Founder, International Director, Geutanyoe Foundation",
+   "specialisation": "Refugee rights, refugee policy, Rohingya, conflict resolution, regional humanitarian responsibility",
+   "email": "lilianne.fan@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "lilyana-abdul-latiff",
+   "name": "Lilyana Abdul Latiff",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "CEO, BETA Foundation",
+   "specialisation": "Technopreneurship, startups",
+   "email": "lilyana@beta-foundation.org",
+   "phone": ""
+  },
+  {
+   "slug": "liya-saffura",
+   "name": "Liya Saffura",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Malaysian Bar",
+   "specialisation": "Law reform",
+   "email": "liyasaffura@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "lum-ka-kay",
+   "name": "Lum Ka Kay",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Journalist, The Ken",
+   "specialisation": "Business and investigative reporting, private capital",
+   "email": "kakay@the-ken.com",
+   "phone": ""
+  },
+  {
+   "slug": "mary-shanthi-dairiam",
+   "name": "Mary Shanthi Dairiam",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    },
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Founding Director, The International Women's Rights Action Watch Asia Pacific",
+   "specialisation": "Gender, women, intersectionality, equality, CEDAW, human rights law, capacity building",
+   "email": "shanthidairiam@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "mastura-mansor",
+   "name": "Mastura Mansor",
+   "industries": [
+    {
+     "slug": "engineering",
+     "name": "Engineering"
+    }
+   ],
+   "role": "Indonesia/Malaysia Country President, Scomi Group",
+   "specialisation": "Operations management, transformation, human resources",
+   "email": "mastura.mansor.mm@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "maxmilliana-fidelis-jani",
+   "name": "Maxmilliana Fidelis Jani",
+   "industries": [
+    {
+     "slug": "nutrition-fitness",
+     "name": "Nutrition & Fitness"
+    }
+   ],
+   "role": "Dietitian, Diet Rx Malaysia",
+   "specialisation": "Healthy eating",
+   "email": "maxmilliana15@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "mayna-ramesh-patel",
+   "name": "Mayna Ramesh Patel",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Services Program Officer, All Women's Action Society",
+   "specialisation": "Survivor support, women's rights",
+   "email": "maynapatel91@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "mediha-mahmood",
+   "name": "Mediha Mahmood",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Executive Director, Communications and Multimedia Content Forum of Malaysia",
+   "specialisation": "communications policy, content regulation",
+   "email": "mediha@contentforum.my",
+   "phone": ""
+  },
+  {
+   "slug": "melissa-kong-chern-mei",
+   "name": "Melissa Kong Chern Mei",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Senior Manager, Education Ecosystem Engagement, Teach For Malaysia",
+   "specialisation": "Community building and mobilisation, public-private partnerships",
+   "email": "melissa.kong@teachformalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "melissa-yoong",
+   "name": "Dr Melissa Yoong",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    },
+    {
+     "slug": "gender",
+     "name": "Gender"
+    },
+    {
+     "slug": "language-linguistics",
+     "name": "Language & Linguistics"
+    }
+   ],
+   "role": "Associate Professor, University of Nottingham Malaysia",
+   "specialisation": "Language, gender, sexuality, sociolingustics, discourse analysis",
+   "email": "melissa.yoong@nottingham.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "mildred-voon",
+   "name": "Mildred Voon",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Development Cluster Lead, Leadership Institute of Sarawak Civil Service",
+   "specialisation": "Government policy, leadership development, strategic planning",
+   "email": "mildred@leadinstitute.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "munira-mustaffa",
+   "name": "Munira Mustaffa",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Executive Director, Chasseur Group",
+   "specialisation": "intelligence, counterterrorism, information warfare, militant operations",
+   "email": "contact@chasseur.group",
+   "phone": ""
+  },
+  {
+   "slug": "mutiara-bahir",
+   "name": "Mutiara Bahir",
+   "industries": [
+    {
+     "slug": "sports",
+     "name": "Sports"
+    }
+   ],
+   "role": "Founder, Women in Football Malaysia",
+   "specialisation": "Grassroots football",
+   "email": "mutiara@wayangworks.com",
+   "phone": ""
+  },
+  {
+   "slug": "nabilla-omar",
+   "name": "Nabilla Omar",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Mobile App Developer, Promosys Technology",
+   "specialisation": "Android, Flutter, Python",
+   "email": "nabillaomar88@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "nadhra-fauzi",
+   "name": "Nadhra Fauzi",
+   "industries": [
+    {
+     "slug": "transport-urban-planning",
+     "name": "Transport, Urban Planning & Regeneration"
+    }
+   ],
+   "role": "Co-founder, TresGo",
+   "specialisation": "Logistics, e-commerce",
+   "email": "nadhra@tresgo.my",
+   "phone": "[email protected]"
+  },
+  {
+   "slug": "nadia-nicole-abd-halim",
+   "name": "Nadia Nicole Abd Halim",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Programme Coordinator, Teach For Malaysia",
+   "specialisation": "Neuroscience and education, training, support",
+   "email": "nadianicole.halim@teachformalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "nadiah-hamzah",
+   "name": "Nadiah Hamzah",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Film Director, Wayang Works",
+   "specialisation": "Filmmaking",
+   "email": "info@wayangworks.com",
+   "phone": ""
+  },
+  {
+   "slug": "naima",
+   "name": "Naima",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Community health worker, Somali Women's Association Malaysia",
+   "specialisation": "Public health",
+   "email": "naimapublichealth@outlook.com",
+   "phone": ""
+  },
+  {
+   "slug": "najah-onn",
+   "name": "Najah Onn",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Environmental Engineer, Footprint Mechanics",
+   "specialisation": "Fashion & apparel supply chain, circularity & sustainability principles in business, ISO management systems",
+   "email": "najah@footprintmechanics.com",
+   "phone": ""
+  },
+  {
+   "slug": "nalini-elumalai",
+   "name": "Nalini Elumalai",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Malaysia Program Officer, ARTICLE 19",
+   "specialisation": "Freedom of expression, freedom of assembly",
+   "email": "nalini@article19.org",
+   "phone": ""
+  },
+  {
+   "slug": "nana",
+   "name": "Nana",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Performing Writer, Independent",
+   "specialisation": "Poetry, zine publishing, game development",
+   "email": "nanawrote@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "natasha-hidayah-hashim",
+   "name": "Natasha Hidayah Hashim",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Gaming Content Producer, Esports Host/Emcee, IGN Southeast Asia",
+   "specialisation": "Gaming, e-sports",
+   "email": "the.tashbunny@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "natasha-zulkifli",
+   "name": "Natasha Zulkifli",
+   "industries": [
+    {
+     "slug": "transport-urban-planning",
+     "name": "Transport, Urban Planning & Regeneration"
+    }
+   ],
+   "role": "Founder Director, Women in Rail Malaysia",
+   "specialisation": "Rail industry in Malaysia",
+   "email": "Natashawir@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "nazihah-noor",
+   "name": "Nazihah Noor",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Scientific Collaborator and PhD Candidate, Population Health Laboratory, University of Fribourg",
+   "specialisation": "Public health policy",
+   "email": "nazihah.noor@unifr.ch",
+   "phone": ""
+  },
+  {
+   "slug": "nazreen-nizam",
+   "name": "Nazreen Nizam",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Activist/Artist, Women's Aid Organisation",
+   "specialisation": "Gender, domestic violence, syariah, grassroots engagement, capacity building, community development, energy healing",
+   "email": "nazreen@wao.org.my",
+   "phone": ""
+  },
+  {
+   "slug": "nishanthi-palani",
+   "name": "Nishanthi Palani",
+   "industries": [
+    {
+     "slug": "agriculture",
+     "name": "Agriculture"
+    }
+   ],
+   "role": "Vice President, Strategic & Digital Communications, Sime Darby Plantation Berhad",
+   "specialisation": "Crisis management, advocacy, digital communications",
+   "email": "nishanthi.palani@simedarbyplantation.com",
+   "phone": ""
+  },
+  {
+   "slug": "noor-aqsa-nabila-mat-isa",
+   "name": "Noor Aqsa Nabila Mat Isa",
+   "industries": [
+    {
+     "slug": "international-relations",
+     "name": "International Relations & Security Studies"
+    }
+   ],
+   "role": "Senior Lecturer, Universiti Malaya",
+   "specialisation": "Terrorism, radicalisation, discrimination",
+   "email": "aqsanabila@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "noor-fzlinda-fabeil",
+   "name": "Noor Fzlinda Fabeil",
+   "industries": [
+    {
+     "slug": "business-accounting",
+     "name": "Business & Accounting"
+    },
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Senior Lecturer, University Malaysia Sabah",
+   "specialisation": "Entrepreneurship, business, finance, economics",
+   "email": "fzlinda@ums.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "nor-arlina-amirah-ahmad-ghani",
+   "name": "Dr Nor Arlina Amirah Ahmad Ghani",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Wildlife conservationist, Justice for Wildlife Malaysia, Rimba",
+   "specialisation": "Wildlife conservation, wildlife crime prosecution, wildlife justice",
+   "email": "director@justicewildlifemy.com",
+   "phone": ""
+  },
+  {
+   "slug": "nor-diana-mohd-mahudin",
+   "name": "Dr Nor Diana Mohd Mahudin",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Associate Progessor, International Islamic University of Malaysia",
+   "specialisation": "Human factors & ergonomics, transport psychology, environmental psychology",
+   "email": "nordianamm@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "norliza-hashim",
+   "name": "Norliza Hashim",
+   "industries": [
+    {
+     "slug": "architecture-design-built-environment",
+     "name": "Architecture, Design & Built Environment"
+    }
+   ],
+   "role": "Town Planner, Urbanice Malaysia, AJM Planning & Urban Design Group",
+   "specialisation": "Low carbon cities, master planning, sustainable urban development, community wellbeing",
+   "email": "lizahashim@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "nur-syazadiyanah-suraini",
+   "name": "Nur Syazadiyanah Suraini",
+   "industries": [
+    {
+     "slug": "architecture-design-built-environment",
+     "name": "Architecture, Design & Built Environment"
+    }
+   ],
+   "role": "Senior Associate, Edvolution Enterprise",
+   "specialisation": "Purposeful or intentional design, user experience, linking curriculum and space",
+   "email": "syaza.sur@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "nuraaina-asri",
+   "name": "Nuraaina Asri",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Malaysia executive, Telum Media",
+   "specialisation": "Malaysian media trends",
+   "email": "nasri@telummedia.com",
+   "phone": ""
+  },
+  {
+   "slug": "nurul-aini-hanani-mohd-saidi",
+   "name": "Nurul Aini Hanani Mohd Saidi",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Teacher, SMK Sungai Tiram",
+   "specialisation": "English language",
+   "email": "aini_hanani@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "nurul-izzati-asyikin-zulkifly",
+   "name": "Nurul Izzati Asyikin Zulkifly",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Industrial/Organisational Psychologist, Lecturer, International Islamic University Malaysia (IIUM)",
+   "specialisation": "Living wage",
+   "email": "izzatizulkifly@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "nurul-miza-mohd-rashid",
+   "name": "Nurul Miza Mohd Rashid",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Lecturer, International Islamic University of Malaysia",
+   "specialisation": "Psychology, forensic psychology, violent extremism",
+   "email": "mizarashid@iium.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "ong-hwei-ling",
+   "name": "Ong Hwei Ling",
+   "industries": [
+    {
+     "slug": "language-linguistics",
+     "name": "Language & Linguistics"
+    }
+   ],
+   "role": "Sign language translator, Malaysian Sign Language Bible Translation Development",
+   "specialisation": "Deaf culture, deaf Identity, Malaysian sign language",
+   "email": "Ladyaxia512@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "phavanjit-kaur",
+   "name": "Phavanjit Kaur",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Training Officer, Department of Human Services",
+   "specialisation": "Punjabi-Sikh diaspora, Malaysian social impact building, crowdfunding, community development",
+   "email": "phavanjitkaur.karamjitsingh@maybank.com",
+   "phone": ""
+  },
+  {
+   "slug": "puveshini-rao",
+   "name": "Puveshini Rao",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Clinical psychologist, Querencia Pyschological & Consulting Services & Rekindle Center for Systemic Therapy",
+   "specialisation": "Acceptance and Commitment Therapy, Cognitive Behavior Therapy, Expressive Arts, Trauma Work with background in gender based violence",
+   "email": "puveshni@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "qaleeda-talib",
+   "name": "Qaleeda Talib",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "Historical literacy advocate, Imagined Malaysia",
+   "specialisation": "Historical literacy and education, academic project management",
+   "email": "qaleeda.talib@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "rafidah-abdullah",
+   "name": "Rafidah Abdullah",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Scriptwriter, Independent",
+   "specialisation": "Scriptwriting (TV & Film)",
+   "email": "sirafidahtu@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "riyana-razalee",
+   "name": "Riyana Razalee",
+   "industries": [
+    {
+     "slug": "agriculture",
+     "name": "Agriculture"
+    },
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Head of Business Development & Strategy, Re-Nuble Inc",
+   "specialisation": "Agriculture technology, food waste management, business development, strategy",
+   "email": "riyana@re-nuble.com",
+   "phone": ""
+  },
+  {
+   "slug": "rowena-razak",
+   "name": "Rowena Abdul Razak",
+   "industries": [
+    {
+     "slug": "history",
+     "name": "History"
+    }
+   ],
+   "role": "DPhil candidate, University of Oxford",
+   "specialisation": "Iranian history and politics, British imperialism in the Middle East, Persian Gulf history and politics.",
+   "email": "rowena.razak@googlemail.com",
+   "phone": ""
+  },
+  {
+   "slug": "rusni-tajari",
+   "name": "Rusni Tajari",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Senior Manager, Strategy and Policy, Wanita Berdaya Selangor",
+   "specialisation": "Women political participation, social policy",
+   "email": "tajarirusni@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "rusnida-talib",
+   "name": "Rusnida Talib",
+   "industries": [
+    {
+     "slug": "engineering",
+     "name": "Engineering"
+    }
+   ],
+   "role": "Deputy Director, Kuala Lumpur City Hall (DBKL), The Institution of Engineers",
+   "specialisation": "Civil engineering, project management, highways, geotechnics",
+   "email": "rusnida@dbkl.gov.my",
+   "phone": ""
+  },
+  {
+   "slug": "sabrina-melisa-aripen",
+   "name": "Sabrina Melisa Aripen",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Chairperson, Founder, Society for Equality, Respect And Trust for All Sabah (SERATA)",
+   "specialisation": "Gender equality, Sabah",
+   "email": "sabrina.aripen@serata.org",
+   "phone": ""
+  },
+  {
+   "slug": "sarah-hanes-lokman-hakim",
+   "name": "Sarah Hanes Lokman Hakim",
+   "industries": [
+    {
+     "slug": "engineering",
+     "name": "Engineering"
+    }
+   ],
+   "role": "Production Engineer, Schlumberger",
+   "specialisation": "Upstream digitalisation and optimisation, oil & gas",
+   "email": "sarahanes2804@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "serena-in",
+   "name": "Dr Serena In",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Senior Lecturer, Clinical Psychologist, Vice President of Malaysian Society of Clinical Psychology, IMU University",
+   "specialisation": "clinical psychology, education",
+   "email": "serenain@imu.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "shamin-shaimah",
+   "name": "Shamin Shaimah",
+   "industries": [
+    {
+     "slug": "forestry-fisheries",
+     "name": "Forestry & Fisheries"
+    },
+    {
+     "slug": "sports",
+     "name": "Sports"
+    }
+   ],
+   "role": "Founder & CEO, The Milkfish Lady & The International Game Fish Association",
+   "specialisation": "sport fishing, ethical angling",
+   "email": "shamin@themilkfishlady.com",
+   "phone": ""
+  },
+  {
+   "slug": "shangari-subramaniam-beames",
+   "name": "Shangari Subramaniam-Beames",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Economist, Bank Negara Malaysia",
+   "specialisation": "Development economics",
+   "email": "Shangari@bnm.gov.my",
+   "phone": ""
+  },
+  {
+   "slug": "shanthi-thambiah",
+   "name": "Shanthi Thambiah",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Lecturer, Universiti Malaya",
+   "specialisation": "Social anthropology, gender studies",
+   "email": "shanthi@um.edu.my",
+   "phone": ""
+  },
+  {
+   "slug": "sharifah-norazehan-syed-yasin",
+   "name": "Sharifah Norazehan Syed Yasin",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Data Engineer, Partenamut",
+   "specialisation": "Data migration, data engineering, healthcare, transportation",
+   "email": "ann.yasin@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "sharmila-rajagopal",
+   "name": "Sharmila Rajagopal",
+   "industries": [
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Technical Communications Manager, Appspace",
+   "specialisation": "Technical communications, editorial, digital web publishing",
+   "email": "sharmila.rajagopal25@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "shaza-hakim",
+   "name": "Shaza Hakim",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "UX Principal, Stampede",
+   "specialisation": "User experience, product design, design leadership",
+   "email": "studio@stampede-design.com",
+   "phone": ""
+  },
+  {
+   "slug": "shazeera-ahmad-zawawi",
+   "name": "Shazeera Ahmad Zawawi",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Senior Advisor, Research and Innovation, Association for Prevention of Torture",
+   "specialisation": "United Nations Convention against Torture, human rights law, data analysis and visualisation, illustration",
+   "email": "szawawi@apt.ch",
+   "phone": ""
+  },
+  {
+   "slug": "sheena-pimentel",
+   "name": "Sheena Pimentel",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    },
+    {
+     "slug": "technology",
+     "name": "Technology"
+    }
+   ],
+   "role": "Head of Corporate PR, Forest Interactive",
+   "specialisation": "Corporate public relations, Corporate social responsibility, industry relations",
+   "email": "sheena@forest-interactive.com",
+   "phone": ""
+  },
+  {
+   "slug": "shelina-razaly-wahi",
+   "name": "Shelina Razaly Wahi",
+   "industries": [
+    {
+     "slug": "aviation",
+     "name": "Aviation"
+    },
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Abdullah Chan & Co",
+   "specialisation": "Aviation law, aerospace law, aviation & aerospace",
+   "email": "shelina@abdullahchan.my",
+   "phone": ""
+  },
+  {
+   "slug": "shobha-janardanan",
+   "name": "Shobha Janardanan",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Content Specialist, Malaysia Digital Economy Corporation (MDEC)",
+   "specialisation": "Content marketing, copywriting",
+   "email": "shobha.janardanan@mdec.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "siti-aiysyah-tumin",
+   "name": "Siti Aiysyah Tumin",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Economist, Bank Negara Malaysia",
+   "specialisation": "Labour, informality, social protection",
+   "email": "aiysyah@bnm.gov.my",
+   "phone": ""
+  },
+  {
+   "slug": "siti-rahayu-baharin",
+   "name": "Siti Rahayu Baharin",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Activist, Buku Jalanan Chow Kit, MUDA",
+   "specialisation": "Child rights, marginalised groups",
+   "email": "sitirahayubaharin@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "sivaranjani-manickam",
+   "name": "Sivaranjani Manickam",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Labour rights activist, Parti Sosialis Malaysia (PSM)",
+   "specialisation": "Labour rights",
+   "email": "jani6028@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "song-cai-li",
+   "name": "Song Cai Li",
+   "industries": [
+    {
+     "slug": "engineering",
+     "name": "Engineering"
+    }
+   ],
+   "role": "Researcher, Petronas",
+   "specialisation": "Chemical engineering, analytical chemistry",
+   "email": "song.caili@petronas.com",
+   "phone": ""
+  },
+  {
+   "slug": "sri-yosephin",
+   "name": "Sri Yosephin",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "Head, elfo",
+   "specialisation": "Media buying, digital marketing, strategic partnerships, martech",
+   "email": "yosephin@elfo.com",
+   "phone": ""
+  },
+  {
+   "slug": "stephanie-caunter",
+   "name": "Stephanie Caunter",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "Regional Head of Marketing, ADA (Axiata Group)",
+   "specialisation": "Brand-building, digital marketing, communications, growth marketing",
+   "email": "stephcaunter@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "suan-ee-ong",
+   "name": "Suan Ee Ong",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Senior Fellow, Galen Centre for Health and Social Policy",
+   "specialisation": "Public health, health systems and policy research, qualitative research",
+   "email": "suaneeong@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "subashini-elangkovan",
+   "name": "Subashini Elangkovan",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Aesthetic & Cosmetic Physician, Eirane Medispa + Wellness",
+   "specialisation": "Aesthetics, female wellness",
+   "email": "drsubaelan@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "suriani-kempe",
+   "name": "Suriani Kempe",
+   "industries": [
+    {
+     "slug": "gender",
+     "name": "Gender"
+    }
+   ],
+   "role": "Consultant, Kemban Kolektif",
+   "specialisation": "gender equality, Muslim family laws, women in the workforce, intersectionality",
+   "email": "suri@kembankolektif.org",
+   "phone": ""
+  },
+  {
+   "slug": "susan-bansin",
+   "name": "Susan Bansin",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Consultant, Theatre for Development",
+   "specialisation": "Theatre for development, storytelling, writing, community theatre, theatre for education",
+   "email": "borneodramatics@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "syahira-omar",
+   "name": "Syahira Omar",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Senior Executive, Hong Leong Bank",
+   "specialisation": "Digital innovation, financial technology",
+   "email": "Syahiraomar@hlbb.hongleong.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "syar-s-alia",
+   "name": "Syar S Alia",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Senior Documentation and Capacity Building Officer, Women's Aid Organisation",
+   "specialisation": "",
+   "email": "ssalia@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "tan-e-hun",
+   "name": "Tan E Hun",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Executive Director, Research for Social Advancement (REFSA)",
+   "specialisation": "Public policy",
+   "email": "ehuntan@refsa.org",
+   "phone": ""
+  },
+  {
+   "slug": "tan-zhen-jing-janell",
+   "name": "Tan Zhen Jing Janell",
+   "industries": [
+    {
+     "slug": "nutrition-fitness",
+     "name": "Nutrition & Fitness"
+    }
+   ],
+   "role": "Health & Wellness Coach, Aspire Wellness & Lifestyle, District 13 Gym",
+   "specialisation": "Personal training, nutrition planning, lifestyle optimization",
+   "email": "absolutjanell@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "tashny-sukumaran",
+   "name": "Tashny Sukumaran",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    },
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Lead, Lookfar Consulting",
+   "specialisation": "forced migration, migrant labour, human rights,",
+   "email": "tashny.sukumaran@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "tehmina-kaoosji",
+   "name": "Tehmina Kaoosji",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Independent Broadcast Journalist, Institute of Journalists Malaysia",
+   "specialisation": "Gender mainstreaming in media",
+   "email": "tehmina.kaoosji@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "tek-yih-koon",
+   "name": "Tek Yih Koon",
+   "industries": [
+    {
+     "slug": "criminology",
+     "name": "Criminology"
+    }
+   ],
+   "role": "Lecturer, National Defence University",
+   "specialisation": "Non-traditional security, crime prevention strategies, fraud and corruption, marginalised communities",
+   "email": "ykteh11@yahoo.com",
+   "phone": ""
+  },
+  {
+   "slug": "tengku-nur-qistina",
+   "name": "Tengku Nur Qistina",
+   "industries": [
+    {
+     "slug": "political-science-public-policy",
+     "name": "Political Science & Public Policy"
+    }
+   ],
+   "role": "Programme Officer (Policy), The Asia Foundation",
+   "specialisation": "Care economy",
+   "email": "tnur.qistina@asiafoundation.org",
+   "phone": ""
+  },
+  {
+   "slug": "tham-jia-vern",
+   "name": "Tham Jia Vern",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Research Lead, Hayat",
+   "specialisation": "criminal justice, death penalty, drug legislation, sentencing reform",
+   "email": "info@myhayat.my",
+   "phone": ""
+  },
+  {
+   "slug": "theresa-manavalan",
+   "name": "Theresa Manavalan",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "",
+   "specialisation": "",
+   "email": "theresa.manavalan@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "tiara-katrina-fuad",
+   "name": "Tiara Katrina Fuad",
+   "industries": [
+    {
+     "slug": "law-legal-systems",
+     "name": "Law & Legal Systems"
+    }
+   ],
+   "role": "Lawyer, Lee Hishammuddin Allen & Gledhill",
+   "specialisation": "criminal law, constitutional law",
+   "email": "tkf@llh-ag.com",
+   "phone": ""
+  },
+  {
+   "slug": "tiara-natassah-ching",
+   "name": "Tiara Natassah Ching",
+   "industries": [
+    {
+     "slug": "sports",
+     "name": "Sports"
+    }
+   ],
+   "role": "Vice President, Malaysia Electronic Sports Federation",
+   "specialisation": "Esports, Sports Assoc. & Fed Constitutions, Athletes Commission, G2G Liaison",
+   "email": "natassah@esportsmalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "trisvette-loh-xiao-tong",
+   "name": "Trisvette Loh Xiao Tong",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Tax Analyst, Deloitte UK",
+   "specialisation": "UK tax law, UK VAT",
+   "email": "trisloh@deloitte.co.uk",
+   "phone": ""
+  },
+  {
+   "slug": "tye-wuey-ping",
+   "name": "Tye Wuey Ping",
+   "industries": [
+    {
+     "slug": "medicine-health",
+     "name": "Medicine & Health"
+    }
+   ],
+   "role": "Speech Therapist, Allied Health Professional",
+   "specialisation": "Speech therapy",
+   "email": "speechoasis@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "usha-ponnudurai",
+   "name": "Usha Ponnudurai",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Licensed counsellor, HELP University",
+   "specialisation": "Relationships, clinical disorders, LGBTQIA",
+   "email": "usha.pon@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "ushar-daniele",
+   "name": "Ushar Daniele",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Asia Correspondent (Malaysia), South China Morning Post",
+   "specialisation": "current affairs, geopolitics, economy, climate change",
+   "email": "usharpkdaniele@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "vaffa-chau-ju-ling",
+   "name": "Vaffa Chau Ju Ling",
+   "industries": [
+    {
+     "slug": "human-resources",
+     "name": "Human Resources"
+    }
+   ],
+   "role": "Manager, Malaysia Professional Talent, TalentCorp",
+   "specialisation": "Work-life practice, women agenda",
+   "email": "vaffa.chau@talentcorp.com.my",
+   "phone": ""
+  },
+  {
+   "slug": "vanitha-veloo",
+   "name": "Vanitha Veloo",
+   "industries": [
+    {
+     "slug": "psychology",
+     "name": "Psychology"
+    }
+   ],
+   "role": "Women empowerment trainer, Pertubuhan Usahawan Wanita Millennium Malaysia",
+   "specialisation": "Women empowerment",
+   "email": "vanithaveloo16@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "venothini-kunathasan-chelliah",
+   "name": "Venothini Kunathasan Chelliah",
+   "industries": [
+    {
+     "slug": "business-accounting",
+     "name": "Business & Accounting"
+    }
+   ],
+   "role": "Director, ZAR Corporate Consultants Sdn. Bhd.",
+   "specialisation": "Accountancy, company formation, resolutions, corporate consultancy",
+   "email": "Info@zarconsultants.com",
+   "phone": ""
+  },
+  {
+   "slug": "visithra-manikam",
+   "name": "Visithra Manikam",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Visual artist, photographer, Independent",
+   "specialisation": "Paintings, sculptures, performance art, street photography, dance photography",
+   "email": "visithra@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "vivian-adelene-adram",
+   "name": "Vivian Adelene Adram",
+   "industries": [
+    {
+     "slug": "public-relations-advertising",
+     "name": "Public Relations and Advertising"
+    }
+   ],
+   "role": "Branding & Marketing Strategist, A Vivid World",
+   "specialisation": "Branding auditor, marketing strategist, design, copywriting, VO",
+   "email": "ask@avividworld.com",
+   "phone": ""
+  },
+  {
+   "slug": "wong-pui-may",
+   "name": "Wong Pui May",
+   "industries": [
+    {
+     "slug": "environment-biodiversity",
+     "name": "Environment, Biodiversity, & Climate Change"
+    }
+   ],
+   "role": "Community Liaison Manager, Projek Takop / Rimba (rimba.ngo)",
+   "specialisation": "Nature conservation, community engagement",
+   "email": "wongpuimay@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "wong-siew-lyn",
+   "name": "Wong Siew Lyn",
+   "industries": [
+    {
+     "slug": "journalism-media",
+     "name": "Journalism and Media"
+    }
+   ],
+   "role": "Editor, writer, Macaranga Media",
+   "specialisation": "Environment, sustainability",
+   "email": "slwong@siewlynwrites.com",
+   "phone": ""
+  },
+  {
+   "slug": "wong-siew-ting",
+   "name": "Wong Siew Ting",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Teacher, Teach For Malaysia, SMK Seri Alam 2",
+   "specialisation": "Teaching English as a Second Language",
+   "email": "siewting.wong2017@teachformalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "yamuna-sharmini-manikam",
+   "name": "Yamuna Sharmini Manikam",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "",
+   "specialisation": "",
+   "email": "yamisham@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "yana-karim",
+   "name": "Yana Karim",
+   "industries": [
+    {
+     "slug": "human-rights",
+     "name": "Human Rights"
+    }
+   ],
+   "role": "Disability Rights Advocate, Boleh Space",
+   "specialisation": "Disability inclusion, accessibility",
+   "email": "yana@bolehspace.com",
+   "phone": ""
+  },
+  {
+   "slug": "yasmeen-zainal",
+   "name": "Yasmeen Zainal",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Chief Executive Officer & Artist Manager, SVLTAN Management",
+   "specialisation": "Artist Management",
+   "email": "yasmeen@svltan.com",
+   "phone": ""
+  },
+  {
+   "slug": "yasmine-merican",
+   "name": "Yasmine Merican",
+   "industries": [
+    {
+     "slug": "economics-finance",
+     "name": "Economics & Finance"
+    }
+   ],
+   "role": "Assistant vice-president, Permodalan Nasional Berhad",
+   "specialisation": "Economics",
+   "email": "yasmine96@gmail.com",
+   "phone": ""
+  },
+  {
+   "slug": "zahirah-zulkifly",
+   "name": "Zahirah Zulkifly",
+   "industries": [
+    {
+     "slug": "education",
+     "name": "Education"
+    }
+   ],
+   "role": "Director, Education Ecosystem Engagement, Teach For Malaysia",
+   "specialisation": "Public stakeholder engagement, public private partnerships, community building",
+   "email": "zahirah.zulkifly@teachformalaysia.org",
+   "phone": ""
+  },
+  {
+   "slug": "zanita-anuar",
+   "name": "Zanita Anuar",
+   "industries": [
+    {
+     "slug": "arts-theatre",
+     "name": "Arts & Theatre"
+    }
+   ],
+   "role": "Curator, National Art Gallery Malaysia",
+   "specialisation": "",
+   "email": "geemelme@gmail.com",
+   "phone": ""
+  }
+ ],
+ "industries": [
+  {
+   "slug": "agriculture",
+   "name": "Agriculture",
+   "count": 3
+  },
+  {
+   "slug": "architecture-design-built-environment",
+   "name": "Architecture, Design & Built Environment",
+   "count": 4
+  },
+  {
+   "slug": "arts-theatre",
+   "name": "Arts & Theatre",
+   "count": 13
+  },
+  {
+   "slug": "aviation",
+   "name": "Aviation",
+   "count": 3
+  },
+  {
+   "slug": "business-accounting",
+   "name": "Business & Accounting",
+   "count": 2
+  },
+  {
+   "slug": "criminology",
+   "name": "Criminology",
+   "count": 1
+  },
+  {
+   "slug": "economics-finance",
+   "name": "Economics & Finance",
+   "count": 16
+  },
+  {
+   "slug": "education",
+   "name": "Education",
+   "count": 19
+  },
+  {
+   "slug": "engineering",
+   "name": "Engineering",
+   "count": 5
+  },
+  {
+   "slug": "environment-biodiversity",
+   "name": "Environment, Biodiversity, & Climate Change",
+   "count": 11
+  },
+  {
+   "slug": "forestry-fisheries",
+   "name": "Forestry & Fisheries",
+   "count": 2
+  },
+  {
+   "slug": "gender",
+   "name": "Gender",
+   "count": 9
+  },
+  {
+   "slug": "geography",
+   "name": "Geography",
+   "count": 1
+  },
+  {
+   "slug": "history",
+   "name": "History",
+   "count": 8
+  },
+  {
+   "slug": "hospitality-tourism",
+   "name": "Hospitality & Tourism",
+   "count": 1
+  },
+  {
+   "slug": "human-resources",
+   "name": "Human Resources",
+   "count": 3
+  },
+  {
+   "slug": "human-rights",
+   "name": "Human Rights",
+   "count": 25
+  },
+  {
+   "slug": "international-relations",
+   "name": "International Relations & Security Studies",
+   "count": 11
+  },
+  {
+   "slug": "journalism-media",
+   "name": "Journalism and Media",
+   "count": 19
+  },
+  {
+   "slug": "language-linguistics",
+   "name": "Language & Linguistics",
+   "count": 3
+  },
+  {
+   "slug": "law-legal-systems",
+   "name": "Law & Legal Systems",
+   "count": 11
+  },
+  {
+   "slug": "medicine-health",
+   "name": "Medicine & Health",
+   "count": 15
+  },
+  {
+   "slug": "migration",
+   "name": "Migration",
+   "count": 2
+  },
+  {
+   "slug": "natural-sciences",
+   "name": "Natural Sciences",
+   "count": 6
+  },
+  {
+   "slug": "nutrition-fitness",
+   "name": "Nutrition & Fitness",
+   "count": 2
+  },
+  {
+   "slug": "philanthropy-impact-finance",
+   "name": "Philanthropy & Impact Finance",
+   "count": 1
+  },
+  {
+   "slug": "political-science-public-policy",
+   "name": "Political Science & Public Policy",
+   "count": 24
+  },
+  {
+   "slug": "psychology",
+   "name": "Psychology",
+   "count": 18
+  },
+  {
+   "slug": "public-relations-advertising",
+   "name": "Public Relations and Advertising",
+   "count": 7
+  },
+  {
+   "slug": "sports",
+   "name": "Sports",
+   "count": 4
+  },
+  {
+   "slug": "sustainable-development",
+   "name": "Sustainable Development",
+   "count": 1
+  },
+  {
+   "slug": "technology",
+   "name": "Technology",
+   "count": 14
+  },
+  {
+   "slug": "transport-urban-planning",
+   "name": "Transport, Urban Planning & Regeneration",
+   "count": 3
+  }
+ ]
+}

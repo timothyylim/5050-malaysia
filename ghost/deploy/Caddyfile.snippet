@@ -1,0 +1,11 @@
+# Add to your Caddyfile. Caddy auto-provisions TLS (Let's Encrypt).
+# Ghost runs on localhost:2368 (see docker-compose.yml).
+
+5050malaysia.com, www.5050malaysia.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:2368
+
+    # www -> apex (optional; Ghost also handles canonical URL)
+    @www host www.5050malaysia.com
+    redir @www https://5050malaysia.com{uri} permanent
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fiftyfifty",
+  "description": "50-50 Malaysia — directory of women experts (minimal design)",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "license": "MIT",
+  "author": { "name": "50-50 Malaysia", "email": "fiftyfiftymalaysia@gmail.com" },
+  "keywords": ["ghost-theme", "directory"],
+  "config": {
+    "posts_per_page": 60,
+    "card_assets": true,
+    "image_sizes": {
+      "s": { "width": 300 },
+      "m": { "width": 720 },
+      "l": { "width": 1200 }
+    },
+    "custom": {
+      "signup_form_url": {
+        "type": "text",
+        "default": "https://forms.gle/REPLACE-WITH-REAL-SIGNUP-FORM",
+        "description": "The Google Form URL for experts to join the database. Shown on every Join/Sign-up button."
+      },
+      "contact_email": {
+        "type": "text",
+        "default": "fiftyfiftymalaysia@gmail.com",
+        "description": "Contact email shown in the footer."
+      }
+    }
+  }
+}

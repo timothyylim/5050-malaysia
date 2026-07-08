@@ -1,6 +1,6 @@
 # HANDOVER - 5050-malaysia
 
-**2026-07-08 16:41 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
+**2026-07-08 17:04 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
 (directory of women experts) and migrating it off WordPress to a free Hugo + Decap CMS
 stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
 conversion is implemented, pushed to GitHub, and deployed to arrakis. Public cutover is
@@ -15,7 +15,9 @@ OAuth App client id/secret.
   until those are replaced.
 - **Caddy running:** `mrx-caddy` was recreated with `/home/tim/5050-malaysia` mounted at
   `/srv/5050-malaysia`. Caddy vhost for `5050malaysia.com`/`www` is loaded, but TLS cert
-  issuance cannot succeed until public DNS points at arrakis.
+  issuance cannot succeed until public DNS points at arrakis. Verified at 2026-07-08 17:04
+  +08: `mrx-caddy` up, `/srv/5050-malaysia/index.html` present, and HTTP Host-header probe
+  to `168.144.107.250` returns Caddy's HTTPS redirect for `5050malaysia.com`.
 - No local preview server remains running. No detached deploy jobs are running.
 - A temporary Gmail venv was created under `/private/tmp/tools-gmail-venv` during the Cynet
   lookup and was removed.
@@ -88,6 +90,7 @@ OAuth App client id/secret.
   - `5050malaysia.com` and `www.5050malaysia.com` resolve to Cloudflare edge IPs
     `172.67.200.201` and `104.21.36.229`.
   - Authoritative nameservers are `duke.ns.cloudflare.com` and `lady.ns.cloudflare.com`.
+  - Verified again at 2026-07-08 17:04 +08; public site is **not** live on arrakis yet.
 - Tim's Cloudflare credentials today:
   - API token is active.
   - Zone `5050malaysia.com` exists in Tim's Cloudflare account, but status is **pending**.
@@ -190,6 +193,6 @@ OAuth App client id/secret.
   modified intentionally by `$t #8` progress logs and then marked blocked.
 - 1Password accessible vault in this session was `Borneo History`; relevant saved items include
   Cloudflare API entries. Do not copy secrets into repo docs.
-- Git state at handover: project repo has post-push local changes to `HANDOVER.md` and
-  `issues/issues.db` that should be committed/pushed if preserving this handover/progress log.
-  Arrakis-infra changes are committed and pushed at `1da5719`.
+- Git state at handover: project repo is pushed to GitHub at `8b305eb` before this handover
+  refresh; commit/push this handover if preserving the 17:04 verification. Arrakis-infra
+  changes are committed and pushed at `1da5719`.

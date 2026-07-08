@@ -1,19 +1,21 @@
 # HANDOVER - 5050-malaysia
 
-**2026-07-08 16:25 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
+**2026-07-08 16:35 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
 (directory of women experts) and migrating it off WordPress to a free Hugo + Decap CMS
 stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
-conversion is implemented and locally verified; production is blocked on GitHub remote/auth,
-arrakis infra wiring, and DNS cutover.
+conversion is implemented, pushed to GitHub, and deployed to arrakis. Public cutover is
+blocked on DNS authority for the live `duke/lady` Cloudflare zone or GoDaddy nameserver
+changes; Decap login is blocked on a real GitHub OAuth App client id/secret.
 
 ## RUNNING RIGHT NOW
-- **Local preview server running in this Codex session:** `hugo server --bind 127.0.0.1
-  --port 1313 --disableFastRender`, URL `http://localhost:1313/`. This is a local session
-  process and will die when the session/tool process is stopped; restart from repo root with
-  `HUGO_CACHEDIR=/Users/tim/repos/5050-malaysia/.hugo_cache hugo server --bind 127.0.0.1
-  --port 1313 --disableFastRender`.
-- No detached arrakis jobs, production deploys, cron, or Docker rehearsal containers are
-  running for this project.
+- **Arrakis service running:** `5050-malaysia-decap-oauth.service` is active on arrakis,
+  listening on `127.0.0.1:8794`. It currently has placeholder OAuth credentials in
+  `/home/tim/5050-malaysia-oauth/.env`, so `/admin/oauth/auth` will not complete GitHub login
+  until those are replaced.
+- **Caddy running:** `mrx-caddy` was recreated with `/home/tim/5050-malaysia` mounted at
+  `/srv/5050-malaysia`. Caddy vhost for `5050malaysia.com`/`www` is loaded, but TLS cert
+  issuance cannot succeed until public DNS points at arrakis.
+- No local preview server remains running. No detached deploy jobs are running.
 - A temporary Gmail venv was created under `/private/tmp/tools-gmail-venv` during the Cynet
   lookup and was removed.
 
@@ -25,30 +27,31 @@ arrakis infra wiring, and DNS cutover.
    `www` and HTTP redirect to `https://5050malaysia.com/`.
 3. **[done] Smoke-test Tim's Cloudflare credentials.** Verified the saved Cloudflare API token
    is active and can read Tim's Cloudflare zone for `5050malaysia.com`.
-4. **[pending - choose DNS path before any writes]**
-   - If using **Tim's Cloudflare account**, first create DNS records in the pending zone:
-     apex `A -> 91.107.211.163` and `www -> 5050malaysia.com` (or `A -> 91.107.211.163`),
-     then change registrar nameservers to `denver.ns.cloudflare.com` and
-     `sneh.ns.cloudflare.com`. Do **not** change nameservers while the zone has zero records.
+4. **[blocked - DNS authority needed]**
+   - Tim's pending Cloudflare zone is now prepared for arrakis:
+     apex `A -> 168.144.107.250`, `www CNAME -> 5050malaysia.com`, both DNS-only, TTL 300.
+     It will become live only if registrar nameservers change to `denver.ns.cloudflare.com`
+     and `sneh.ns.cloudflare.com`.
    - If editing the **currently live Cloudflare zone**, get credentials for the account using
      `duke.ns.cloudflare.com` and `lady.ns.cloudflare.com`. The current creds do not control
      that authoritative zone.
-   - Decision rule: do not perform a DNS write until the intended target is explicit:
-     "keep current Cynet WordPress live", "cut over to Ghost", or "move live DNS into Tim's
-     Cloudflare first".
+   - No GoDaddy/registrar credential was found in 1Password, so nameserver switch cannot be
+     done from this session.
 5. **[done - local Hugo implementation]** Issue #8 now tracks the pivot. Implemented Hugo
    config/templates, editable `content/` source, Decap CMS admin config, free GitHub OAuth
    proxy for arrakis, arrakis Caddy/deploy assets, and `DEPLOY-HUGO.md`. Verified local
    build and preview.
-6. **[pending - production GitHub setup]** Add a real GitHub remote/repo for this project,
-   update `static/admin/config.yml` if the repo path is not `timothyylim/5050-malaysia`, and
-   give Tashy write access.
-7. **[pending - Decap auth]** Create a GitHub OAuth App with callback
+6. **[done - production GitHub setup]** Created public repo
+   `https://github.com/timothyylim/5050-malaysia`, added `origin`, committed/pushed
+   `main` at `e5af0dc`. Tashy still needs collaborator access once her GitHub username is
+   known.
+7. **[blocked - Decap auth]** Create a GitHub OAuth App with callback
    `https://5050malaysia.com/admin/oauth/callback`; put the client id/secret in
    `/home/tim/5050-malaysia-oauth/.env` on arrakis, not in git.
-8. **[pending - arrakis deploy]** Apply `deploy/arrakis/Caddyfile.snippet` and the OAuth
-   service to `/Users/tim/repos/arrakis-infra` declaratively, add the `/home/tim/5050-malaysia`
-   bind mount, deploy Caddy with `--restart`, then run `scripts/deploy-arrakis.sh`.
+8. **[done - arrakis deploy]** Static Hugo build rsynced to arrakis. Applied NixOS service,
+   Caddy vhost, and Docker bind mount; `arrakis-infra` committed/pushed at `1da5719`.
+   Verified Caddy config and static mount. Existing `smoke-test.sh` has an unrelated
+   `borneobaddies.hyperspeed.studio` TLS failure (`000` vs expected `401`).
 9. **[optional, doable now]** Pull authoritative content from the live WordPress REST API
    (`https://5050malaysia.com/wp-json/wp/v2/...`, open, no login) and diff against
    `content/` before launch.
@@ -71,6 +74,9 @@ arrakis infra wiring, and DNS cutover.
   - Decap admin is configured at `/admin/` with GitHub backend and
     `/admin/oauth/auth` auth endpoint.
   - Free OAuth proxy syntax and health endpoint were tested locally with dummy credentials.
+  - Public GitHub source repo is `https://github.com/timothyylim/5050-malaysia`.
+  - Arrakis deployment files are present under `/home/tim/5050-malaysia`; Caddy validates
+    and sees `/srv/5050-malaysia/index.html` plus `/srv/5050-malaysia/admin/config.yml`.
 - Ghost theme `fiftyfifty` passes gscan for Ghost 6.x with 0 errors, but Ghost is now
   superseded because it is too heavy for this directory.
 - Full local Ghost rehearsal previously succeeded: booted Ghost in Docker, uploaded and
@@ -84,7 +90,9 @@ arrakis infra wiring, and DNS cutover.
   - API token is active.
   - Zone `5050malaysia.com` exists in Tim's Cloudflare account, but status is **pending**.
   - Pending-zone nameservers are `denver.ns.cloudflare.com` and `sneh.ns.cloudflare.com`.
-  - The pending zone has **zero DNS records**.
+  - Pending-zone DNS records now exist:
+    `5050malaysia.com A 168.144.107.250` and
+    `www.5050malaysia.com CNAME 5050malaysia.com`, both DNS-only.
   - Global API key sees the same pending zone, not the live `duke/lady` zone.
 - Cynet today:
   - Old origin `78.47.57.7:2082/2083` still times out.
@@ -121,7 +129,11 @@ arrakis infra wiring, and DNS cutover.
   `scripts/import_hugo_content.py --force` unless intentionally overwriting those edits.
 - `public/`, `.hugo_cache/`, and `.hugo_build.lock` are ignored build artifacts.
 - Production Decap login needs a GitHub OAuth App and the Node OAuth proxy on arrakis; the
-  proxy code is in `deploy/arrakis/decap-oauth-server.js`.
+  proxy code is in `deploy/arrakis/decap-oauth-server.js`. The service is running with
+  placeholder credentials; health checks pass but GitHub login will not until replaced.
+- Caddy started ACME attempts for `5050malaysia.com` and `www.5050malaysia.com`, but they fail
+  while live DNS still resolves through the old Cloudflare `duke/lady` zone. After DNS cutover,
+  Caddy should retry and issue certificates.
 - Ghost Admin API returns the admin key as `id:secret` in the `secret` field already; do not
   prepend the id again.
 - Ghost `{{#get}}` does not like `limit="all"`; use a numeric limit. Theme uses 50.
@@ -138,8 +150,8 @@ arrakis infra wiring, and DNS cutover.
   - prepare Tim's pending Cloudflare zone and change registrar nameservers to `denver/sneh`.
 - If using Tim's pending Cloudflare zone, get/confirm registrar access for changing
   nameservers. Registrar is GoDaddy; domain expiry is 2026-12-16.
-- For Hugo production: GitHub remote/repo, Tashy GitHub collaborator access, GitHub OAuth App
-  client id/secret, arrakis infra changes, and final DNS authority.
+- For Hugo production: Tashy GitHub username/collaborator access, GitHub OAuth App client
+  id/secret, and final DNS authority.
 - GA4 property access for `G-K7M2VY5E2F`.
 - Real Google Form URL and owner.
 - `fiftyfiftymalaysia@gmail.com` inbox access if needed for operational handoff.
@@ -172,8 +184,9 @@ arrakis infra wiring, and DNS cutover.
 - `ghost/content/` - Ghost Admin API importer, package files, `.env.example`.
 - `ghost/deploy/` - Docker Compose, Caddy snippet, env example.
 - `issues/` - local tracker DB. Current worktree shows `issues/issues.db` modified; this was
-  pre-existing during the handover update and was not changed intentionally here.
+  modified intentionally by `$t #8` progress logs and then marked blocked.
 - 1Password accessible vault in this session was `Borneo History`; relevant saved items include
   Cloudflare API entries. Do not copy secrets into repo docs.
-- Git state at handover: `HANDOVER.md` modified; `issues/issues.db` also modified from prior
-  work.
+- Git state at handover: project repo has post-push local changes to `HANDOVER.md` and
+  `issues/issues.db` that should be committed/pushed if preserving this handover/progress log.
+  Arrakis-infra changes are committed and pushed at `1da5719`.

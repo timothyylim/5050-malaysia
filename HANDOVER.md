@@ -1,11 +1,12 @@
 # HANDOVER - 5050-malaysia
 
-**2026-07-08 16:35 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
+**2026-07-08 16:41 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
 (directory of women experts) and migrating it off WordPress to a free Hugo + Decap CMS
 stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
 conversion is implemented, pushed to GitHub, and deployed to arrakis. Public cutover is
 blocked on DNS authority for the live `duke/lady` Cloudflare zone or GoDaddy nameserver
-changes; Decap login is blocked on a real GitHub OAuth App client id/secret.
+changes; Tim has asked for the GoDaddy credentials. Decap login is blocked on a real GitHub
+OAuth App client id/secret.
 
 ## RUNNING RIGHT NOW
 - **Arrakis service running:** `5050-malaysia-decap-oauth.service` is active on arrakis,
@@ -35,8 +36,9 @@ changes; Decap login is blocked on a real GitHub OAuth App client id/secret.
    - If editing the **currently live Cloudflare zone**, get credentials for the account using
      `duke.ns.cloudflare.com` and `lady.ns.cloudflare.com`. The current creds do not control
      that authoritative zone.
-   - No GoDaddy/registrar credential was found in 1Password, so nameserver switch cannot be
-     done from this session.
+   - No GoDaddy/registrar credential was found in 1Password or `$tools` Gmail for
+     `5050malaysia.com`. Tim has asked for GoDaddy credentials; once received, change
+     nameservers to `denver/sneh` and verify propagation.
 5. **[done - local Hugo implementation]** Issue #8 now tracks the pivot. Implemented Hugo
    config/templates, editable `content/` source, Decap CMS admin config, free GitHub OAuth
    proxy for arrakis, arrakis Caddy/deploy assets, and `DEPLOY-HUGO.md`. Verified local
@@ -109,8 +111,8 @@ changes; Decap login is blocked on a real GitHub OAuth App client id/secret.
 ## GOTCHAS
 - There are two Cloudflare realities:
   - The **live** zone is on `duke/lady` and is not controlled by the saved Tim Cloudflare creds.
-  - Tim's zone is **pending** on `denver/sneh` and empty. It can probably be prepared, but
-    switching registrar nameservers to it before adding records would break the site.
+  - Tim's zone is **pending** on `denver/sneh` and has the arrakis records ready. Switching
+    registrar nameservers to it should cut traffic to arrakis once propagation completes.
 - "Point Cynet to Cloudflare" can mean two different operations:
   - Update Cloudflare DNS records to point at Cynet origin `91.107.211.163`.
   - Change registrar nameservers so Tim's Cloudflare zone becomes authoritative.
@@ -147,9 +149,10 @@ changes; Decap login is blocked on a real GitHub OAuth App client id/secret.
 ## OPEN ITEMS (blocked on humans)
 - Decide DNS strategy:
   - get access to the live `duke/lady` Cloudflare account, or
-  - prepare Tim's pending Cloudflare zone and change registrar nameservers to `denver/sneh`.
+  - use the requested GoDaddy credentials to change registrar nameservers to `denver/sneh`.
 - If using Tim's pending Cloudflare zone, get/confirm registrar access for changing
-  nameservers. Registrar is GoDaddy; domain expiry is 2026-12-16.
+  nameservers. Registrar is GoDaddy; domain expiry is 2026-12-16. Tim has already asked for
+  the GoDaddy credentials.
 - For Hugo production: Tashy GitHub username/collaborator access, GitHub OAuth App client
   id/secret, and final DNS authority.
 - GA4 property access for `G-K7M2VY5E2F`.

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="wrap">
+  <div class="page-head"><h1>{{ .Title }}</h1></div>
+  <section class="page-section"><div class="prose">
+    {{ .Content }}
+    {{ if .Params.founders }}
+      {{ range .Params.founders }}
+        <h3>{{ .name }}</h3>
+        <p>{{ .bio }}</p>
+        <p class="muted small">{{ .social }}</p>
+      {{ end }}
+      <p class="action-row"><a class="btn" href="{{ site.Params.signupFormURL }}" target="_blank" rel="noopener">Join the database</a></p>
+    {{ end }}
+    {{ if .Params.faqs }}
+      {{ range .Params.faqs }}
+        <h3>{{ .question }}</h3>
+        <p>{{ .answer | markdownify }}</p>
+      {{ end }}
+      <p class="action-row"><a class="btn" href="{{ site.Params.signupFormURL }}" target="_blank" rel="noopener">Join the database</a></p>
+    {{ end }}
+  </div></section>
+</div>
+{{ end }}
+

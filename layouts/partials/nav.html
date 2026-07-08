@@ -1,0 +1,12 @@
+{{ $current := .RelPermalink }}
+<nav class="site">
+  <a class="logo" href="/"><img src="/assets/logo.svg" alt="50-50 Malaysia"></a>
+  <div class="nav-links">
+    <a href="/#browse"{{ if .IsHome }} class="active"{{ end }}>Browse experts</a>
+    <a href="/industries/"{{ if hasPrefix $current "/industries/" }} class="active"{{ end }}>Industries</a>
+    <a href="/about/"{{ if eq $current "/about/" }} class="active"{{ end }}>About</a>
+    <a href="/faq/"{{ if eq $current "/faq/" }} class="active"{{ end }}>FAQs</a>
+    <a class="btn" href="{{ site.Params.signupFormURL }}" target="_blank" rel="noopener">Join the database</a>
+  </div>
+</nav>
+

@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $profiles := sort (where site.RegularPages "Section" "profiles") "Title" }}
+{{ $industries := sort (where site.RegularPages "Section" "industries") "Params.count" "desc" }}
+<div class="wrap">
+  <header class="hero">
+    <div class="pill"><span>A directory of <b>women experts</b> across Malaysia</span></div>
+    <h1 class="big">Find a woman expert on <span class="g">any topic.</span></h1>
+    <p class="lede">Journalists, event organisers and policymakers use 50-50 Malaysia to find qualified women to quote, invite and consult in seconds.</p>
+    <div class="searchbar">
+      <input id="q" type="search" autocomplete="off" placeholder="Try climate, labour law, psychology...">
+    </div>
+    <p class="hint">Free to use. No account needed. {{ len $profiles }} experts across {{ len $industries }} industries.</p>
+    <div class="stats">
+      <div><b>{{ len $profiles }}</b><span>women experts</span></div>
+      <div><b>{{ len $industries }}</b><span>industries</span></div>
+      <div><b>100%</b><span>women-led</span></div>
+    </div>
+  </header>
+</div>
+
+<section id="browse"><div class="wrap">
+  <p class="count-note" id="countNote"></p>
+  <div id="results" class="people is-hidden"></div>
+  <div id="browseBlock">
+    <div class="sec-title"><h2>Browse by industry</h2><p>Every field where Malaysia needs more women in the room.</p></div>
+    <div class="ind-grid">
+      {{ range first 9 $industries }}
+        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ .Params.count }}</span></a>
+      {{ end }}
+    </div>
+    <p class="center action-row"><a class="btn ghost" href="/industries/">View all {{ len $industries }} industries</a></p>
+  </div>
+</div></section>
+
+<section class="flush-top"><div class="wrap"><div class="join">
+  <h2>Are you an expert in your field?</h2>
+  <p>Add yourself to the database in a few minutes. One short form, and the site is updated every two months.</p>
+  <a class="btn" href="{{ site.Params.signupFormURL }}" target="_blank" rel="noopener">Sign up via Google Form</a>
+</div></div></section>
+<script src="/assets/search.js"></script>
+{{ end }}
+

@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $profiles := sort (where site.RegularPages "Section" "profiles") "Title" }}
+<div class="wrap">
+  <div class="page-head">
+    <h1>Experts</h1>
+    <p class="muted">{{ len $profiles }} women experts listed. Use the homepage search for faster filtering by topic, role, or industry.</p>
+  </div>
+  <section class="page-section">
+    <div class="people">
+      {{ range $profiles }}
+        {{ partial "person-card.html" (dict "profile" .) }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
+

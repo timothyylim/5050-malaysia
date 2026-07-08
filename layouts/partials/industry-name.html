@@ -1,0 +1,7 @@
+{{- $slug := . -}}
+{{- with site.GetPage (printf "/industries/%s" $slug) -}}
+  {{- .Title -}}
+{{- else -}}
+  {{- replace $slug "-" " " | title -}}
+{{- end -}}
+

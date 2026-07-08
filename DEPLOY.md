@@ -1,4 +1,7 @@
-# Deploy runbook — 50-50 Malaysia on self-hosted Ghost
+# Deploy runbook - 50-50 Malaysia on self-hosted Ghost
+
+> Superseded: the active free plan is now Hugo + Decap CMS + GitHub + arrakis static
+> hosting. Use `DEPLOY-HUGO.md` unless explicitly reviving the Ghost migration.
 
 Everything below is prepared locally. When the credentials from tracker **#6** land,
 this is a ~15–20 minute deploy. Do the steps in order.

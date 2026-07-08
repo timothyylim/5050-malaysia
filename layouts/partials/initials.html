@@ -1,0 +1,7 @@
+{{- $words := split . " " -}}
+{{- $letters := slice -}}
+{{- range first 2 $words -}}
+  {{- if . -}}{{- $letters = $letters | append (upper (substr . 0 1)) -}}{{- end -}}
+{{- end -}}
+{{- delimit $letters "" -}}
+

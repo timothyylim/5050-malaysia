@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $slug := .File.ContentBaseName }}
+{{ $people := where (where site.RegularPages "Section" "profiles") "Params.industries" "intersect" (slice $slug) }}
+<div class="wrap">
+  <div class="page-head">
+    <div class="crumb"><a href="/industries/">Industries</a> / {{ .Title }}</div>
+    <h1>{{ .Title }}</h1>
+    <p class="muted">{{ len $people }} {{ cond (eq (len $people) 1) "expert" "experts" }} listed.</p>
+  </div>
+  <section class="page-section">
+    <div class="people">
+      {{ range sort $people "Title" }}
+        {{ partial "person-card.html" (dict "profile" .) }}
+      {{ else }}
+        <div class="empty">No experts listed yet.</div>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
+

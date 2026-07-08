@@ -1,0 +1,10 @@
+5050malaysia.com, www.5050malaysia.com {
+	encode zstd gzip
+
+	handle /admin/oauth/* {
+		reverse_proxy host.docker.internal:8794
+	}
+
+	root * /srv/5050-malaysia
+	file_server
+}

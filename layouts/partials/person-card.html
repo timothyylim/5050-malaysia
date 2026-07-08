@@ -1,0 +1,13 @@
+{{ $profile := .profile }}
+{{ $prefix := .prefix | default "" }}
+<a class="person" href="{{ $profile.RelPermalink }}">
+  <div class="avatar">{{ partial "initials.html" $profile.Title }}</div>
+  <h3>{{ $profile.Title }}</h3>
+  {{ with $profile.Params.role }}<div class="role">{{ . }}</div>{{ end }}
+  <div class="tags">
+    {{ range first 3 $profile.Params.industries }}
+      <span class="tag">{{ partial "industry-name.html" . }}</span>
+    {{ end }}
+  </div>
+</a>
+

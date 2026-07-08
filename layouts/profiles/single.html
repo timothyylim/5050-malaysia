@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="wrap">
+  <div class="page-head">
+    <div class="crumb"><a href="/">Experts</a> / {{ .Title }}</div>
+    <div class="profile-title">
+      <div class="avatar profile-avatar">{{ partial "initials.html" .Title }}</div>
+      <h1>{{ .Title }}</h1>
+    </div>
+  </div>
+  <section class="page-section"><div class="detail">
+    <div class="field">
+      <div class="label">Industries</div>
+      <div class="value"><div class="tags">
+        {{ range .Params.industries }}
+          {{ with site.GetPage (printf "/industries/%s" .) }}
+            <a class="tag" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        {{ end }}
+      </div></div>
+    </div>
+    {{ with .Params.role }}<div class="field"><div class="label">Role &amp; Organisation</div><div class="value">{{ . }}</div></div>{{ end }}
+    {{ with .Params.specialisation }}<div class="field"><div class="label">Specialisation</div><div class="value">{{ . }}</div></div>{{ end }}
+    {{ with .Params.email }}<div class="field"><div class="label">Email</div><div class="value"><a href="mailto:{{ . }}">{{ . }}</a></div></div>{{ end }}
+    {{ with .Params.phone }}<div class="field"><div class="label">Phone</div><div class="value">{{ . }}</div></div>{{ end }}
+  </div>
+  <p class="action-row"><a class="btn ghost" href="/">Back to search</a></p>
+  </section>
+</div>
+{{ end }}
+

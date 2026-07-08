@@ -1,0 +1,23 @@
+baseURL = "https://5050malaysia.com/"
+languageCode = "en"
+title = "50-50 Malaysia"
+disableKinds = ["RSS", "sitemap", "taxonomy", "term"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+description = "A directory of women experts across Malaysia."
+brandColor = "#5f5fd3"
+contactEmail = "fiftyfiftymalaysia@gmail.com"
+signupFormURL = "https://forms.gle/REPLACE-WITH-REAL-SIGNUP-FORM"
+foundedBy = "Tashny Sukumaran, Vimal Kumar & Ash Menon"
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[outputFormats.JSON]
+mediaType = "application/json"
+baseName = "index"
+isPlainText = true
+

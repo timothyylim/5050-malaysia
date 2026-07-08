@@ -1,40 +1,58 @@
-# 50-50 Malaysia — local rebuild
+# 50-50 Malaysia - Hugo directory rebuild
 
-A local static rebuild of [5050malaysia.com](https://5050malaysia.com/) — the directory
-of Malaysian women experts — restyled in the "minimal" design direction (indigo `#5f5fd3`,
-clean/whitespace-forward), using the site's **real content** scraped from the live site.
+A Hugo rebuild of [5050malaysia.com](https://5050malaysia.com/) - the directory of
+Malaysian women experts - with GitHub-backed editing through Decap CMS and static hosting
+on arrakis.
 
 - **235 expert profiles** · **33 industries** · About + FAQ
-- Client-side live search over the whole database (no backend)
+- Client-side live search over the whole database
+- Decap CMS admin at `/admin/` for non-technical profile/page editing
+- GitHub content files as the source of truth and bus-factor backup
 - Real logo + brand colour, light/dark theme aware, responsive
 
 ## Layout
 
 ```
+content/
+  profiles/         # editable expert profiles (one Markdown file each)
+  industries/       # editable industry pages
+  about.md faq.md   # editable static pages
+layouts/            # Hugo templates
+static/
+  admin/            # Decap CMS config + loader
+  assets/           # logo, favicon, CSS, search JS
+deploy/arrakis/     # Caddy snippet + free Decap OAuth proxy for arrakis
+scripts/
+  import_hugo_content.py  # one-time import from scraped JSON; do not rerun after CMS edits
+  deploy-arrakis.sh       # hugo build + rsync public/ to arrakis
 assets/            # source brand assets (logo SVGs, favicon) pulled from the live site
 build/
-  build.py         # generates the whole site into ../site/
+  build.py         # legacy static-site generator
   site.css         # shared stylesheet (design-2 "minimal")
   search.js        # homepage live search
-  data.json        # scraped experts + industries (source of truth)
+  data.json        # scraped experts + industries (original import source)
   faq.json         # scraped FAQ Q&A
-site/              # GENERATED output — this is the deployable site
+site/              # legacy generated static reference
   index.html  industries.html  about.html  faq.html
   industries/<slug>.html   (33)
   profiles/<slug>.html     (235)
-  assets/  (site.css, search.js, data.json, logo.svg, logo-inverse.svg, favicon)
+public/            # Hugo build output, gitignored
 CONTEXT.md         # background on the project/org
+DEPLOY-HUGO.md     # current deploy runbook
+DEPLOY.md          # superseded Ghost deploy runbook
 ```
 
 ## Build & preview
 
 ```bash
-cd build && python3 build.py          # regenerate site/
-cd ../site && python3 -m http.server 8899   # serve (fetch() needs http, not file://)
-# open http://localhost:8899
+hugo --gc --minify
+hugo server --bind 127.0.0.1 --port 1313
+# open http://127.0.0.1:1313
 ```
 
-Edit content in `build/data.json` / `build/faq.json`, then re-run `build.py`.
+Edit content in `content/` directly or through Decap CMS. Do not re-run
+`scripts/import_hugo_content.py --force` after CMS edits unless you intentionally want to
+overwrite Hugo content from the old scraped JSON.
 
 ## ⚠️ Before going live — replace placeholders
 
@@ -45,11 +63,25 @@ In `build/build.py`:
   actually linked** — this rebuild wires a real Sign-up button everywhere, per tracker #1.)
 - `CONTACT` = `fiftyfiftymalaysia@gmail.com` (decoded from the live site) — confirm it's current.
 
-## Deploying (self-hosted Ghost)
+## Deploying (free Hugo stack on arrakis)
 
-The production target is **self-hosted open-source Ghost** on our own server. Everything is
-prepared and **locally rehearsed** (booted Ghost in Docker, uploaded the theme, ran the
-importer, verified every route) — see **[DEPLOY.md](DEPLOY.md)** for the ~15-min runbook.
+The production target is **Hugo + Decap CMS + GitHub + arrakis static hosting**. See
+**[DEPLOY-HUGO.md](DEPLOY-HUGO.md)** for the runbook.
+
+The free editing path is:
+
+1. Tashy logs into `/admin/` with GitHub.
+2. Decap commits edits to the public GitHub repo.
+3. Hugo builds the static site.
+4. Arrakis serves the generated `public/` files through Caddy.
+
+Before launch, the repo path in `static/admin/config.yml` must match the real GitHub remote,
+and a GitHub OAuth App secret must be installed outside the repo for the arrakis OAuth proxy.
+
+## Superseded Ghost work
+
+The self-hosted Ghost migration was built and locally rehearsed, but Ghost is now considered
+too heavy for this directory. The files remain for reference:
 
 ```
 ghost/
@@ -60,11 +92,7 @@ ghost/
   build-theme-zip.sh# packages ghost/fiftyfifty.zip for upload
 ```
 
-Content model: **expert = post**, **industry = tag**, About/FAQ = pages. The Google Form URL
-is a Ghost **theme setting** (editable in admin, no code) — that solves the sign-up button (#1).
-Deploy is blocked only on credentials (tracker #6 → #7).
-
-The `site/` static build stays as a fast visual reference / fallback.
+The `site/` static build and `ghost/` work stay as visual/reference fallbacks.
 
 ## Data notes
 

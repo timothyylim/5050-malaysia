@@ -1,0 +1,16 @@
+[Unit]
+Description=50-50 Malaysia Decap GitHub OAuth proxy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=tim
+WorkingDirectory=/home/tim/5050-malaysia-oauth
+EnvironmentFile=/home/tim/5050-malaysia-oauth/.env
+ExecStart=/run/current-system/sw/bin/node /home/tim/5050-malaysia-oauth/decap-oauth-server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

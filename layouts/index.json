@@ -1,0 +1,23 @@
+{{- $profiles := sort (where site.RegularPages "Section" "profiles") "Title" -}}
+{
+  "profiles": [
+    {{- range $index, $profile := $profiles -}}
+      {{- if $index -}},{{- end -}}
+      {
+        "slug": {{ $profile.File.ContentBaseName | jsonify }},
+        "url": {{ $profile.RelPermalink | jsonify }},
+        "name": {{ $profile.Title | jsonify }},
+        "role": {{ ($profile.Params.role | default "") | jsonify }},
+        "specialisation": {{ ($profile.Params.specialisation | default "") | jsonify }},
+        "industries": [
+          {{- range $industryIndex, $slug := $profile.Params.industries -}}
+            {{- if $industryIndex -}},{{- end -}}
+            {{- $name := replace $slug "-" " " | title -}}
+            {{- with site.GetPage (printf "/industries/%s" $slug) -}}{{- $name = .Title -}}{{- end -}}
+            {"slug": {{ $slug | jsonify }}, "name": {{ $name | jsonify }}}
+          {{- end -}}
+        ]
+      }
+    {{- end -}}
+  ]
+}

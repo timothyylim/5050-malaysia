@@ -3,5 +3,8 @@ __pycache__/
 *.pyc
 node_modules/
 .env
+.hugo_cache/
+.hugo_build.lock
+public/
 ghost/**/.env
 ghost/fiftyfifty.zip

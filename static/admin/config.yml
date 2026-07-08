@@ -1,0 +1,82 @@
+backend:
+  name: github
+  repo: timothyylim/5050-malaysia
+  branch: main
+  base_url: https://5050malaysia.com
+  auth_endpoint: /admin/oauth/auth
+
+local_backend: true
+publish_mode: simple
+media_folder: static/uploads
+public_folder: /uploads
+
+collections:
+  - name: profiles
+    label: Experts
+    label_singular: Expert
+    folder: content/profiles
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - {label: Name, name: title, widget: string}
+      - {label: Slug, name: slug, widget: string, hint: "Lowercase URL slug, e.g. siti-aminah"}
+      - label: Industries
+        name: industries
+        widget: relation
+        collection: industries
+        search_fields: [title]
+        display_fields: [title]
+        value_field: "{{slug}}"
+        multiple: true
+        required: true
+      - {label: "Role & Organisation", name: role, widget: string, required: false}
+      - {label: Specialisation, name: specialisation, widget: text, required: false}
+      - {label: Email, name: email, widget: string, required: false}
+      - {label: Phone, name: phone, widget: string, required: false}
+      - {label: Draft, name: draft, widget: boolean, default: false, required: false}
+      - {label: Notes, name: body, widget: markdown, required: false}
+
+  - name: industries
+    label: Industries
+    label_singular: Industry
+    folder: content/industries
+    create: true
+    slug: "{{slug}}"
+    filter: {field: layout, value: industry}
+    fields:
+      - {label: Name, name: title, widget: string}
+      - {label: Slug, name: slug, widget: string}
+      - {label: Layout, name: layout, widget: hidden, default: industry}
+      - {label: Description, name: description, widget: text, required: false}
+      - {label: Count, name: count, widget: number, required: false, value_type: int, hint: "Shown on browse cards. Update after major profile changes."}
+
+  - name: pages
+    label: Pages
+    files:
+      - label: About
+        name: about
+        file: content/about.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - {label: Body, name: body, widget: markdown}
+          - label: Founders
+            name: founders
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Bio, name: bio, widget: text}
+              - {label: Social, name: social, widget: string, required: false}
+      - label: FAQs
+        name: faq
+        file: content/faq.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - label: Questions
+            name: faqs
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: markdown}

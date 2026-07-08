@@ -1,0 +1,167 @@
+[
+  {
+    "slug": "agriculture",
+    "name": "Agriculture",
+    "count": 3
+  },
+  {
+    "slug": "architecture-design-built-environment",
+    "name": "Architecture, Design & Built Environment",
+    "count": 4
+  },
+  {
+    "slug": "arts-theatre",
+    "name": "Arts & Theatre",
+    "count": 13
+  },
+  {
+    "slug": "aviation",
+    "name": "Aviation",
+    "count": 3
+  },
+  {
+    "slug": "business-accounting",
+    "name": "Business & Accounting",
+    "count": 2
+  },
+  {
+    "slug": "criminology",
+    "name": "Criminology",
+    "count": 1
+  },
+  {
+    "slug": "economics-finance",
+    "name": "Economics & Finance",
+    "count": 16
+  },
+  {
+    "slug": "education",
+    "name": "Education",
+    "count": 19
+  },
+  {
+    "slug": "engineering",
+    "name": "Engineering",
+    "count": 5
+  },
+  {
+    "slug": "environment-biodiversity",
+    "name": "Environment, Biodiversity, & Climate Change",
+    "count": 11
+  },
+  {
+    "slug": "forestry-fisheries",
+    "name": "Forestry & Fisheries",
+    "count": 2
+  },
+  {
+    "slug": "gender",
+    "name": "Gender",
+    "count": 9
+  },
+  {
+    "slug": "geography",
+    "name": "Geography",
+    "count": 1
+  },
+  {
+    "slug": "history",
+    "name": "History",
+    "count": 8
+  },
+  {
+    "slug": "hospitality-tourism",
+    "name": "Hospitality & Tourism",
+    "count": 1
+  },
+  {
+    "slug": "human-resources",
+    "name": "Human Resources",
+    "count": 3
+  },
+  {
+    "slug": "human-rights",
+    "name": "Human Rights",
+    "count": 25
+  },
+  {
+    "slug": "international-relations",
+    "name": "International Relations & Security Studies",
+    "count": 11
+  },
+  {
+    "slug": "journalism-media",
+    "name": "Journalism and Media",
+    "count": 19
+  },
+  {
+    "slug": "language-linguistics",
+    "name": "Language & Linguistics",
+    "count": 3
+  },
+  {
+    "slug": "law-legal-systems",
+    "name": "Law & Legal Systems",
+    "count": 11
+  },
+  {
+    "slug": "medicine-health",
+    "name": "Medicine & Health",
+    "count": 15
+  },
+  {
+    "slug": "migration",
+    "name": "Migration",
+    "count": 2
+  },
+  {
+    "slug": "natural-sciences",
+    "name": "Natural Sciences",
+    "count": 6
+  },
+  {
+    "slug": "nutrition-fitness",
+    "name": "Nutrition & Fitness",
+    "count": 2
+  },
+  {
+    "slug": "philanthropy-impact-finance",
+    "name": "Philanthropy & Impact Finance",
+    "count": 1
+  },
+  {
+    "slug": "political-science-public-policy",
+    "name": "Political Science & Public Policy",
+    "count": 24
+  },
+  {
+    "slug": "psychology",
+    "name": "Psychology",
+    "count": 18
+  },
+  {
+    "slug": "public-relations-advertising",
+    "name": "Public Relations and Advertising",
+    "count": 7
+  },
+  {
+    "slug": "sports",
+    "name": "Sports",
+    "count": 4
+  },
+  {
+    "slug": "sustainable-development",
+    "name": "Sustainable Development",
+    "count": 1
+  },
+  {
+    "slug": "technology",
+    "name": "Technology",
+    "count": 14
+  },
+  {
+    "slug": "transport-urban-planning",
+    "name": "Transport, Urban Planning & Regeneration",
+    "count": 3
+  }
+]

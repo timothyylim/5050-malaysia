@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $industries := sort (where site.RegularPages "Section" "industries") "Title" }}
+<div class="wrap">
+  <div class="page-head">
+    <h1>Browse by industry</h1>
+    <p class="muted">{{ len (where site.RegularPages "Section" "profiles") }} women experts across {{ len $industries }} industries. Pick a field to see who is listed.</p>
+  </div>
+  <section class="page-section">
+    <div class="ind-grid">
+      {{ range $industries }}
+        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ .Params.count }}</span></a>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}
+

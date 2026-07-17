@@ -1,5 +1,11 @@
 # HANDOVER - 5050-malaysia
 
+**2026-07-17 update.** Decap editor workflow is now client-oriented and pushed at
+`e9110f0`; Arrakis infrastructure commit `f6a0d52` adds an active five-minute Hugo
+pull/build timer. The timer has cloned source commit `e9110f0` and completed its first
+successful build. Remaining launch blockers are DNS authority and real GitHub OAuth
+credentials.
+
 **2026-07-08 17:04 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
 (directory of women experts) and migrating it off WordPress to a free Hugo + Decap CMS
 stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
@@ -19,6 +25,8 @@ OAuth App client id/secret.
   +08: `mrx-caddy` up, `/srv/5050-malaysia/index.html` present, and HTTP Host-header probe
   to `168.144.107.250` returns Caddy's HTTPS redirect for `5050malaysia.com`.
 - No local preview server remains running. No detached deploy jobs are running.
+- **Automatic Hugo sync running:** `5050-malaysia-hugo-sync.timer` is active on arrakis,
+  rebuilding `/home/tim/5050-malaysia` every five minutes from the public GitHub source.
 - A temporary Gmail venv was created under `/private/tmp/tools-gmail-venv` during the Cynet
   lookup and was removed.
 
@@ -55,7 +63,8 @@ OAuth App client id/secret.
 8. **[done - arrakis deploy]** Static Hugo build rsynced to arrakis. Applied NixOS service,
    Caddy vhost, and Docker bind mount; `arrakis-infra` committed/pushed at `1da5719`.
    Verified Caddy config and static mount. Existing `smoke-test.sh` has an unrelated
-   `borneobaddies.hyperspeed.studio` TLS failure (`000` vs expected `401`).
+   `borneobaddies.hyperspeed.studio` TLS failure (`000` vs expected `401`). The Hugo
+   pull/build timer was subsequently activated and verified with a successful run.
 9. **[optional, doable now]** Pull authoritative content from the live WordPress REST API
    (`https://5050malaysia.com/wp-json/wp/v2/...`, open, no login) and diff against
    `content/` before launch.

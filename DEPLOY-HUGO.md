@@ -134,7 +134,12 @@ For manual deploys:
 ./scripts/deploy-arrakis.sh
 ```
 
-For a pull/build model, create an arrakis systemd timer or cron that runs:
+The recommended production setup is an arrakis systemd timer. Every five minutes it pulls
+the public source repository and rebuilds the served directory, so a Decap publish becomes
+live automatically. The timer is declared in `arrakis-infra/nixos/configuration.nix` as
+`5050-malaysia-hugo-sync`.
+
+For a manual pull/build model, run:
 
 ```bash
 cd /home/tim/5050-malaysia-src
@@ -142,4 +147,6 @@ git pull --ff-only
 hugo --gc --minify --destination /home/tim/5050-malaysia
 ```
 
-This keeps GitHub as the source of truth while arrakis remains only the static host.
+This keeps GitHub as the source of truth while arrakis remains only the static host. The
+first timer run clones `https://github.com/timothyylim/5050-malaysia` into
+`/home/tim/5050-malaysia-src`; subsequent runs use fast-forward-only pulls.

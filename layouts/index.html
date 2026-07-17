@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $profiles := sort (where site.RegularPages "Section" "profiles") "Title" }}
-{{ $industries := sort (where site.RegularPages "Section" "industries") "Params.count" "desc" }}
+{{ $industries := sort (where site.RegularPages "Section" "industries") "Title" }}
 <div class="wrap">
   <header class="hero">
     <div class="pill"><span>A directory of <b>women experts</b> across Malaysia</span></div>
@@ -25,7 +25,8 @@
     <div class="sec-title"><h2>Browse by industry</h2><p>Every field where Malaysia needs more women in the room.</p></div>
     <div class="ind-grid">
       {{ range first 9 $industries }}
-        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ .Params.count }}</span></a>
+        {{ $count := len (where $profiles "Params.industries" "intersect" (slice .Params.slug)) }}
+        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ $count }}</span></a>
       {{ end }}
     </div>
     <p class="center action-row"><a class="btn ghost" href="/industries/">View all {{ len $industries }} industries</a></p>
@@ -39,4 +40,3 @@
 </div></div></section>
 <script src="/assets/search.js"></script>
 {{ end }}
-

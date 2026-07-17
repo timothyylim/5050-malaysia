@@ -54,6 +54,8 @@ Edit content in `content/` directly or through Decap CMS. Do not re-run
 `scripts/import_hugo_content.py --force` after CMS edits unless you intentionally want to
 overwrite Hugo content from the old scraped JSON.
 
+For the non-technical editor workflow, see [ADMIN-GUIDE.md](ADMIN-GUIDE.md).
+
 ## ⚠️ Before going live — replace placeholders
 
 In `build/build.py`:

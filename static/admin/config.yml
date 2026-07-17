@@ -5,6 +5,10 @@ backend:
   base_url: https://5050malaysia.com
   auth_endpoint: /admin/oauth/auth
 
+site_url: https://5050malaysia.com
+display_url: https://5050malaysia.com
+logo_url: /assets/logo.svg
+show_preview_links: true
 local_backend: true
 publish_mode: simple
 media_folder: static/uploads
@@ -19,8 +23,8 @@ collections:
     slug: "{{slug}}"
     summary: "{{title}}"
     fields:
-      - {label: Name, name: title, widget: string}
-      - {label: Slug, name: slug, widget: string, hint: "Lowercase URL slug, e.g. siti-aminah"}
+      - {label: Name, name: title, widget: string, required: true, hint: "The expert's full name."}
+      - {label: Public URL slug, name: slug, widget: string, required: true, hint: "Lowercase URL slug, e.g. siti-aminah. Leave unchanged when editing an existing profile."}
       - label: Industries
         name: industries
         widget: relation
@@ -34,8 +38,8 @@ collections:
       - {label: Specialisation, name: specialisation, widget: text, required: false}
       - {label: Email, name: email, widget: string, required: false}
       - {label: Phone, name: phone, widget: string, required: false}
-      - {label: Draft, name: draft, widget: boolean, default: false, required: false}
-      - {label: Notes, name: body, widget: markdown, required: false}
+      - {label: Hide from public directory, name: draft, widget: boolean, default: false, required: false, hint: "Leave off for a normal published profile. Turn on only while preparing a profile."}
+      - {label: Internal notes, name: body, widget: markdown, required: false, hint: "Optional notes for the directory team. This field is not displayed on the public profile."}
 
   - name: industries
     label: Industries
@@ -45,11 +49,10 @@ collections:
     slug: "{{slug}}"
     filter: {field: layout, value: industry}
     fields:
-      - {label: Name, name: title, widget: string}
-      - {label: Slug, name: slug, widget: string}
+      - {label: Name, name: title, widget: string, required: true}
+      - {label: Public URL slug, name: slug, widget: string, required: true, hint: "Lowercase URL slug, e.g. human-rights. Leave unchanged when editing an existing industry."}
       - {label: Layout, name: layout, widget: hidden, default: industry}
       - {label: Description, name: description, widget: text, required: false}
-      - {label: Count, name: count, widget: number, required: false, value_type: int, hint: "Shown on browse cards. Update after major profile changes."}
 
   - name: pages
     label: Pages

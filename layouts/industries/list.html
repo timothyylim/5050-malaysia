@@ -8,10 +8,10 @@
   <section class="page-section">
     <div class="ind-grid">
       {{ range $industries }}
-        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ .Params.count }}</span></a>
+        {{ $count := len (where (where site.RegularPages "Section" "profiles") "Params.industries" "intersect" (slice .Params.slug)) }}
+        <a class="ind-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span class="count">{{ $count }}</span></a>
       {{ end }}
     </div>
   </section>
 </div>
 {{ end }}
-

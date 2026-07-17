@@ -4,10 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#5f5fd3">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png">
   <title>50-50 Malaysia Admin</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; background: #f7f7fb; }
+    .admin-loading { box-sizing: border-box; min-height: 100vh; display: grid; place-items: center; padding: 2rem; font: 16px/1.5 system-ui, sans-serif; color: #24243a; }
+    .admin-loading-card { max-width: 28rem; padding: 2rem; background: white; border: 1px solid #e6e6f0; border-radius: 1rem; box-shadow: 0 12px 40px rgba(34, 34, 80, .08); text-align: center; }
+    .admin-loading img { width: min(220px, 70vw); height: auto; margin-bottom: 1.25rem; }
+    .admin-loading h1 { margin: 0 0 .5rem; font-size: 1.35rem; }
+    .admin-loading p { margin: 0; color: #65657a; }
+  </style>
 </head>
 <body>
+  <div class="admin-loading" aria-live="polite">
+    <div class="admin-loading-card">
+      <img src="/assets/logo.svg" alt="50-50 Malaysia">
+      <h1>Loading the editor</h1>
+      <p>Use this page to add and update expert profiles.</p>
+    </div>
+  </div>
+  <script>
+    const loading = document.querySelector('.admin-loading');
+    const observer = new MutationObserver(() => {
+      if (document.querySelector('#nc-root')) {
+        loading.remove();
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
-

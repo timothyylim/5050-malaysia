@@ -41,13 +41,25 @@ DEPLOY-HUGO.md     # current deploy runbook
 DEPLOY.md          # superseded Ghost deploy runbook
 ```
 
-## Build & preview
+## Making changes
+
+Run `make` to see the tasks. The everyday loop:
 
 ```bash
-hugo --gc --minify
-hugo server --bind 127.0.0.1 --port 1313
-# open http://127.0.0.1:1313
+make preview                 # live local preview at http://127.0.0.1:1313
+make publish m="what I did"  # build + commit + push + rebuild on Arrakis + verify live
+make verify                  # re-check the live site any time
 ```
+
+`make publish` is the one-command deploy: it builds (catching template errors before
+anything ships), commits, **rebases over any edits the `/admin/` editor pushed**, pushes to
+GitHub, triggers the Arrakis rebuild, then verifies the live site by hitting the origin IP
+directly — so a stale local DNS cache can't fool you into thinking it worked. Underlying
+scripts live in `scripts/` (`publish.sh`, `preview.sh`, `verify-live.sh`, `config.sh`); the
+old `deploy-arrakis.sh` rsync path is deprecated and now forwards to `publish.sh`.
+
+Prefer a plain build/preview without deploying? `hugo --gc --minify` and
+`hugo server --bind 127.0.0.1 --port 1313`.
 
 Edit content in `content/` directly or through the password-protected editor. Do not re-run
 `scripts/import_hugo_content.py --force` after CMS edits unless you intentionally want to

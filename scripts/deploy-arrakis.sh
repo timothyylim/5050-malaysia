@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
+# DEPRECATED. The old deploy rsynced public/ straight to Arrakis, but the site now
+# rebuilds from GitHub every 5 minutes — an rsync would be overwritten by the next
+# sync. Use the git-based flow instead:
+#
+#   ./scripts/publish.sh "your message"   # build + commit + push + rebuild + verify
+#
+# Forwarding to it now so nothing breaks.
 set -euo pipefail
-
 cd "$(dirname "$0")/.."
-
-hugo --gc --minify
-rsync -az --delete public/ arrakis:/home/tim/5050-malaysia/
-
-cat <<'MSG'
-Deployed public/ to arrakis:/home/tim/5050-malaysia/
-
-If this is the first deploy, add deploy/arrakis/Caddyfile.snippet to
-arrakis-infra/Caddyfile, mount /home/tim/5050-malaysia as /srv/5050-malaysia
-in mrx-compose.yml, then run arrakis-infra/deploy-caddy.sh --restart.
-MSG
-
+echo "deploy-arrakis.sh is deprecated → running scripts/publish.sh instead." >&2
+exec ./scripts/publish.sh "$@"

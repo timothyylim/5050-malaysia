@@ -6,7 +6,7 @@ superseded migration rehearsal.
 ## Architecture
 
 - Hugo builds the public site from `content/`.
-- Decap CMS is served at `/admin/` and writes changes back to GitHub.
+- A password-protected editor is served at `/admin/` and writes changes back to GitHub.
 - GitHub is the source of truth and bus-factor backup.
 - Arrakis serves the generated static files from `/home/tim/5050-malaysia/` through Caddy.
 
@@ -35,29 +35,20 @@ CMS/GitHub edits from the old scraped JSON.
 
 ## Admin editing
 
-Decap CMS lives at:
+The password-protected editor lives at:
 
 ```text
 https://5050malaysia.com/admin/
 ```
 
-Production auth is configured for GitHub:
+Caddy gates it with the existing Arrakis Basic Auth credential and reverse-proxies it to
+the editor service on localhost port 8796. The service validates profile fields, writes
+Hugo Markdown, commits the change, and pushes it through the repository-scoped deploy key
+at `/home/tim/.ssh/5050-malaysia-deploy`. Tashny does not need a GitHub account.
 
-```yaml
-backend:
-  name: github
-  repo: timothyylim/5050-malaysia
-  branch: main
-  base_url: https://5050malaysia.com
-  auth_endpoint: /admin/oauth/auth
-```
-
-Before launch, confirm the GitHub repo path and create a GitHub OAuth App:
-
-- Homepage URL: `https://5050malaysia.com`
-- Authorization callback URL: `https://5050malaysia.com/admin/oauth/callback`
-
-Tashy needs a free GitHub account with write access to the repo.
+The editor implementation is `deploy/arrakis/5050-editor-server.js`. The legacy
+`static/admin/` Decap files remain in the repository as a reference but are no longer
+routed publicly.
 
 ## Arrakis first deploy
 
@@ -68,49 +59,12 @@ Tashy needs a free GitHub account with write access to the repo.
    - /home/tim/5050-malaysia:/srv/5050-malaysia:ro
    ```
 
-3. Install the free Decap OAuth proxy on arrakis.
+3. Generate a repository-scoped deploy key on arrakis and add the public half to the
+   GitHub repository with write access. The private key must stay at
+   `/home/tim/.ssh/5050-malaysia-deploy` and must never enter git.
 
-   Copy the proxy source and create its secret env file:
-
-   ```bash
-   ssh arrakis 'mkdir -p /home/tim/5050-malaysia-oauth'
-   scp deploy/arrakis/decap-oauth-server.js arrakis:/home/tim/5050-malaysia-oauth/
-   ssh arrakis 'cat > /home/tim/5050-malaysia-oauth/.env <<EOF
-   GITHUB_CLIENT_ID=REPLACE
-   GITHUB_CLIENT_SECRET=REPLACE
-   OAUTH_REDIRECT_URI=https://5050malaysia.com/admin/oauth/callback
-   GITHUB_SCOPE=public_repo
-   EOF'
-   ```
-
-   Store the OAuth app secret outside the repo. Then add the service declaratively in
-   `/Users/tim/repos/arrakis-infra/nixos/configuration.nix` and rebuild arrakis:
-
-   ```nix
-   systemd.services."5050-malaysia-decap-oauth" = {
-     description = "50-50 Malaysia Decap GitHub OAuth proxy";
-     after = [ "network-online.target" ];
-     wants = [ "network-online.target" ];
-     wantedBy = [ "multi-user.target" ];
-     serviceConfig = {
-       User = "tim";
-       WorkingDirectory = "/home/tim/5050-malaysia-oauth";
-       EnvironmentFile = "/home/tim/5050-malaysia-oauth/.env";
-       ExecStart = "${pkgs.nodejs}/bin/node /home/tim/5050-malaysia-oauth/decap-oauth-server.js";
-       Restart = "always";
-       RestartSec = 5;
-     };
-   };
-   ```
-
-   ```bash
-   ssh arrakis 'sudo nixos-rebuild switch'
-   ```
-
-   `deploy/arrakis/decap-oauth.service` is kept as a portable reference unit, but arrakis
-   should use the NixOS declaration above.
-
-4. Deploy/restart Caddy because this adds a new bind mount:
+4. Apply the declarative NixOS services in `arrakis-infra/nixos/configuration.nix` and
+   deploy the Caddy route for `/admin/`:
 
    ```bash
    cd /Users/tim/repos/arrakis-infra
@@ -135,7 +89,7 @@ For manual deploys:
 ```
 
 The recommended production setup is an arrakis systemd timer. Every five minutes it pulls
-the public source repository and rebuilds the served directory, so a Decap publish becomes
+the public source repository and rebuilds the served directory, so an editor publish becomes
 live automatically. The timer is declared in `arrakis-infra/nixos/configuration.nix` as
 `5050-malaysia-hugo-sync`.
 

@@ -1,24 +1,22 @@
 # HANDOVER - 5050-malaysia
 
-**2026-07-17 update.** Decap editor workflow is now client-oriented and pushed at
-`e9110f0`; Arrakis infrastructure commit `f6a0d52` adds an active five-minute Hugo
-pull/build timer. The timer has cloned source commit `e9110f0` and completed its first
-successful build. Remaining launch blockers are DNS authority and real GitHub OAuth
-credentials.
+**2026-07-17 update.** The editor has been changed from Decap/GitHub OAuth to a
+password-protected Arrakis editor. The editor service writes structured profiles, commits
+through a repository-scoped deploy key, and the active five-minute Hugo timer builds the
+site. Remaining launch blocker is DNS authority; the editor route still needs its Caddy
+service deployment after this change.
 
 **2026-07-08 17:04 +08 (Asia/Kuala_Lumpur).** Rebuilding 50-50 Malaysia
-(directory of women experts) and migrating it off WordPress to a free Hugo + Decap CMS
-stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
+(directory of women experts) and migrating it off WordPress to a free Hugo + password-
+protected editor stack, with GitHub as the source of truth and arrakis as the static host. The Hugo
 conversion is implemented, pushed to GitHub, and deployed to arrakis. Public cutover is
 blocked on DNS authority for the live `duke/lady` Cloudflare zone or GoDaddy nameserver
-changes; Tim has asked for the GoDaddy credentials. Decap login is blocked on a real GitHub
-OAuth App client id/secret.
+changes; Tim has asked for the GoDaddy credentials.
 
 ## RUNNING RIGHT NOW
-- **Arrakis service running:** `5050-malaysia-decap-oauth.service` is active on arrakis,
-  listening on `127.0.0.1:8794`. It currently has placeholder OAuth credentials in
-  `/home/tim/5050-malaysia-oauth/.env`, so `/admin/oauth/auth` will not complete GitHub login
-  until those are replaced.
+- **Arrakis editor service:** the new `5050-malaysia-editor.service` will listen on
+  `127.0.0.1:8796` behind Caddy Basic Auth. Its repository-scoped deploy key is installed
+  on arrakis and registered on the GitHub repository.
 - **Caddy running:** `mrx-caddy` was recreated with `/home/tim/5050-malaysia` mounted at
   `/srv/5050-malaysia`. Caddy vhost for `5050malaysia.com`/`www` is loaded, but TLS cert
   issuance cannot succeed until public DNS points at arrakis. Verified at 2026-07-08 17:04
@@ -50,16 +48,16 @@ OAuth App client id/secret.
      `5050malaysia.com`. Tim has asked for GoDaddy credentials; once received, change
      nameservers to `denver/sneh` and verify propagation.
 5. **[done - local Hugo implementation]** Issue #8 now tracks the pivot. Implemented Hugo
-   config/templates, editable `content/` source, Decap CMS admin config, free GitHub OAuth
-   proxy for arrakis, arrakis Caddy/deploy assets, and `DEPLOY-HUGO.md`. Verified local
+   config/templates, editable `content/` source, password-protected editor, arrakis Caddy/deploy
+   assets, and `DEPLOY-HUGO.md`. Verified local
    build and preview.
 6. **[done - production GitHub setup]** Created public repo
    `https://github.com/timothyylim/5050-malaysia`, added `origin`, committed/pushed
    `main` at `e5af0dc`. Tashy still needs collaborator access once her GitHub username is
    known.
-7. **[blocked - Decap auth]** Create a GitHub OAuth App with callback
-   `https://5050malaysia.com/admin/oauth/callback`; put the client id/secret in
-   `/home/tim/5050-malaysia-oauth/.env` on arrakis, not in git.
+7. **[done - password editor]** Replaced the Decap/GitHub OAuth requirement with a
+   dependency-free editor service at `deploy/arrakis/5050-editor-server.js`, protected by
+   the existing Arrakis Basic Auth and backed by a repository-scoped deploy key.
 8. **[done - arrakis deploy]** Static Hugo build rsynced to arrakis. Applied NixOS service,
    Caddy vhost, and Docker bind mount; `arrakis-infra` committed/pushed at `1da5719`.
    Verified Caddy config and static mount. Existing `smoke-test.sh` has an unrelated
@@ -84,9 +82,7 @@ OAuth App client id/secret.
   - Verified source/build counts: 235 profiles and 33 industries in both.
   - Verified representative generated routes: `/`, `/index.json`, `/admin/config.yml`,
     `/industries/human-rights/`, `/profiles/adhura-husna/`.
-  - Decap admin is configured at `/admin/` with GitHub backend and
-    `/admin/oauth/auth` auth endpoint.
-  - Free OAuth proxy syntax and health endpoint were tested locally with dummy credentials.
+  - Legacy Decap files remain for reference but `/admin/` is now routed to the password editor.
   - Public GitHub source repo is `https://github.com/timothyylim/5050-malaysia`.
   - Arrakis deployment files are present under `/home/tim/5050-malaysia`; Caddy validates
     and sees `/srv/5050-malaysia/index.html` plus `/srv/5050-malaysia/admin/config.yml`.
@@ -139,12 +135,11 @@ OAuth App client id/secret.
   `/industries/{slug}/`. Home `/` is the collection archive but renders `index.hbs`.
 - Hugo content model: expert = `content/profiles/{slug}.md`; industry =
   `content/industries/{slug}.md`; About/FAQ = single Markdown files. `build/data.json` and
-  `build/faq.json` were only the import source. After Tashy edits via Decap, do **not** rerun
+  `build/faq.json` were only the import source. After Tashny edits via the editor, do **not** rerun
   `scripts/import_hugo_content.py --force` unless intentionally overwriting those edits.
 - `public/`, `.hugo_cache/`, and `.hugo_build.lock` are ignored build artifacts.
-- Production Decap login needs a GitHub OAuth App and the Node OAuth proxy on arrakis; the
-  proxy code is in `deploy/arrakis/decap-oauth-server.js`. The service is running with
-  placeholder credentials; health checks pass but GitHub login will not until replaced.
+- The new editor service requires Caddy Basic Auth and a repository-scoped deploy key; it
+  does not expose GitHub credentials to editors.
 - Caddy started ACME attempts for `5050malaysia.com` and `www.5050malaysia.com`, but they fail
   while live DNS still resolves through the old Cloudflare `duke/lady` zone. After DNS cutover,
   Caddy should retry and issue certificates.
@@ -165,8 +160,8 @@ OAuth App client id/secret.
 - If using Tim's pending Cloudflare zone, get/confirm registrar access for changing
   nameservers. Registrar is GoDaddy; domain expiry is 2026-12-16. Tim has already asked for
   the GoDaddy credentials.
-- For Hugo production: Tashy GitHub username/collaborator access, GitHub OAuth App client
-  id/secret, and final DNS authority.
+- For Hugo production: final DNS authority and confirmation of the Basic Auth credentials
+  Tashny should use.
 - GA4 property access for `G-K7M2VY5E2F`.
 - Real Google Form URL and owner.
 - `fiftyfiftymalaysia@gmail.com` inbox access if needed for operational handoff.
@@ -180,15 +175,15 @@ OAuth App client id/secret.
 - `HANDOVER.md` - this current-state handover; overwritten each handover.
 - `README.md` - repo overview, build/preview instructions, Ghost deployment summary.
 - `DEPLOY.md` - self-hosted Ghost deployment runbook.
-- `DEPLOY-HUGO.md` - current Hugo + Decap + arrakis deployment runbook.
+- `DEPLOY-HUGO.md` - current Hugo + editor + arrakis deployment runbook.
 - `hugo.toml` - Hugo site config.
 - `content/` - editable Hugo source of truth for profiles, industries, About, and FAQ.
 - `layouts/` - Hugo templates for home/search JSON, profiles, industries, and pages.
-- `static/admin/` - Decap CMS loader and collection config.
+- `static/admin/` - legacy Decap CMS loader and collection config (not publicly routed).
 - `static/assets/` - Hugo-served CSS, search JS, logo, favicon.
 - `scripts/import_hugo_content.py` - one-time importer from scraped JSON to Hugo content.
 - `scripts/deploy-arrakis.sh` - builds Hugo and rsyncs `public/` to arrakis.
-- `deploy/arrakis/` - Caddy snippet plus Decap GitHub OAuth proxy/service template.
+- `deploy/arrakis/` - Caddy snippet plus password-protected editor service.
 - `CONTEXT.md` - org/project background.
 - `build/` - source data and static-site generator:
   `data.json`, `faq.json`, `build.py`, `site.css`, `search.js`.

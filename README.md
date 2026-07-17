@@ -1,12 +1,11 @@
 # 50-50 Malaysia - Hugo directory rebuild
 
 A Hugo rebuild of [5050malaysia.com](https://5050malaysia.com/) - the directory of
-Malaysian women experts - with GitHub-backed editing through Decap CMS and static hosting
-on arrakis.
+Malaysian women experts - with a password-protected editor and static hosting on arrakis.
 
 - **235 expert profiles** · **33 industries** · About + FAQ
 - Client-side live search over the whole database
-- Decap CMS admin at `/admin/` for non-technical profile/page editing
+- Password-protected `/admin/` editor for non-technical profile editing
 - GitHub content files as the source of truth and bus-factor backup
 - Real logo + brand colour, light/dark theme aware, responsive
 
@@ -19,9 +18,9 @@ content/
   about.md faq.md   # editable static pages
 layouts/            # Hugo templates
 static/
-  admin/            # Decap CMS config + loader
+  admin/            # legacy Decap files retained as a reference
   assets/           # logo, favicon, CSS, search JS
-deploy/arrakis/     # Caddy snippet + free Decap OAuth proxy for arrakis
+deploy/arrakis/     # Caddy snippet + password-protected editor service
 scripts/
   import_hugo_content.py  # one-time import from scraped JSON; do not rerun after CMS edits
   deploy-arrakis.sh       # hugo build + rsync public/ to arrakis
@@ -50,7 +49,7 @@ hugo server --bind 127.0.0.1 --port 1313
 # open http://127.0.0.1:1313
 ```
 
-Edit content in `content/` directly or through Decap CMS. Do not re-run
+Edit content in `content/` directly or through the password-protected editor. Do not re-run
 `scripts/import_hugo_content.py --force` after CMS edits unless you intentionally want to
 overwrite Hugo content from the old scraped JSON.
 
@@ -67,18 +66,18 @@ In `build/build.py`:
 
 ## Deploying (free Hugo stack on arrakis)
 
-The production target is **Hugo + Decap CMS + GitHub + arrakis static hosting**. See
+The production target is **Hugo + password-protected editor + GitHub backup + arrakis static hosting**. See
 **[DEPLOY-HUGO.md](DEPLOY-HUGO.md)** for the runbook.
 
-The free editing path is:
+The editing path is:
 
-1. Tashy logs into `/admin/` with GitHub.
-2. Decap commits edits to the public GitHub repo.
-3. Hugo builds the static site.
-4. Arrakis serves the generated `public/` files through Caddy.
+1. Tashny logs into `/admin/` with the existing Arrakis Basic Auth credentials.
+2. The editor validates and commits changes to the public GitHub repo through a repository-scoped deploy key.
+3. The Hugo timer builds the static site every five minutes.
+4. Arrakis serves the generated files through Caddy.
 
-Before launch, the repo path in `static/admin/config.yml` must match the real GitHub remote,
-and a GitHub OAuth App secret must be installed outside the repo for the arrakis OAuth proxy.
+The editor service lives in `deploy/arrakis/5050-editor-server.js`; its deploy key and
+Basic Auth remain outside the repository.
 
 ## Superseded Ghost work
 

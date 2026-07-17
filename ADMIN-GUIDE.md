@@ -23,5 +23,5 @@ to maintain manually.
 
 Open **Pages**, choose **About** or **FAQs**, make the change, and click **Publish**.
 
-The first sign-in uses GitHub authorization. After that, all editing happens in this
+Sign in with the existing 50-50 Malaysia editor password. All editing happens in this
 editor; there is no need to visit GitHub or edit files.

@@ -42,7 +42,7 @@ https://5050malaysia.com/admin/
 ```
 
 Caddy gates it with the existing Arrakis Basic Auth credential and reverse-proxies it to
-the editor service on localhost port 8796. The service validates profile fields, writes
+the editor service on localhost port 8797. The service validates profile fields, writes
 Hugo Markdown, commits the change, and pushes it through the repository-scoped deploy key
 at `/home/tim/.ssh/5050-malaysia-deploy`. Tashny does not need a GitHub account.
 

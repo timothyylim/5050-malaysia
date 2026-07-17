@@ -11,7 +11,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
 
-const port = Number(process.env.PORT || 8796);
+const port = Number(process.env.PORT || 8797);
 const sourceDir = process.env.SOURCE_DIR || "/home/tim/5050-malaysia-src";
 const profilesDir = path.join(sourceDir, "content", "profiles");
 const industriesDir = path.join(sourceDir, "content", "industries");

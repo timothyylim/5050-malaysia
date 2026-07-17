@@ -24,12 +24,6 @@ nav.site{display:flex;align-items:center;justify-content:space-between;height:74
 .nav-links{display:flex;gap:28px;align-items:center;font-size:15px;color:var(--muted)}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a.active{color:var(--ink);font-weight:600}
-.theme-toggle{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;padding:0;transition:border-color .15s,color .15s,background .15s}
-.theme-toggle:hover{border-color:var(--brand);color:var(--brand-ink)}
-.theme-toggle svg{width:18px;height:18px;display:block}
-.theme-toggle .icon-moon{display:none}
-:root[data-theme="dark"] .theme-toggle .icon-sun{display:none}
-:root[data-theme="dark"] .theme-toggle .icon-moon{display:block}
 /* hero */
 .hero{text-align:center;padding:76px 0 30px}
 .pill{display:inline-flex;align-items:center;gap:8px;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;color:var(--muted);margin-bottom:24px}

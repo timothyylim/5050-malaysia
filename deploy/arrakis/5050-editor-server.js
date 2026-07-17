@@ -12,6 +12,7 @@ const path = require("node:path");
 const { spawnSync } = require("node:child_process");
 
 const port = Number(process.env.PORT || 8797);
+const host = process.env.HOST || "127.0.0.1";
 const sourceDir = process.env.SOURCE_DIR || "/home/tim/5050-malaysia-src";
 const profilesDir = path.join(sourceDir, "content", "profiles");
 const industriesDir = path.join(sourceDir, "content", "industries");
@@ -183,4 +184,4 @@ async function handler(req, res) {
   }
 }
 
-http.createServer(handler).listen(port, "127.0.0.1", () => console.log(`50-50 editor listening on 127.0.0.1:${port}`));
+http.createServer(handler).listen(port, host, () => console.log(`50-50 editor listening on ${host}:${port}`));

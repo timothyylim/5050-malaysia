@@ -2,6 +2,14 @@
 
 Use the editor at `https://5050malaysia.com/admin/`.
 
+## Signing in
+
+Go to `https://5050malaysia.com/admin/`. You'll see a login page — enter the
+50-50 Malaysia editor password and select **Sign in**. You stay signed in on that
+browser for about a year, so you won't need to re-enter it on every visit. When you're
+finished on a shared or public computer, use the **Sign out** link in the top-right of
+the editor to end the session.
+
 ## Add an expert
 
 1. Open **Experts** and choose **New Expert**.
@@ -23,5 +31,4 @@ to maintain manually.
 
 Open **Pages**, choose **About** or **FAQs**, make the change, and click **Publish**.
 
-Sign in with the existing 50-50 Malaysia editor password. All editing happens in this
-editor; there is no need to visit GitHub or edit files.
+All editing happens in this editor; there is no need to visit GitHub or edit files.

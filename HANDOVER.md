@@ -1,5 +1,29 @@
 # HANDOVER - 5050-malaysia
 
+**2026-07-18 update.** Several changes shipped and were verified live this session:
+
+- **Editor auth changed: Basic Auth → app-level year-long session cookie.** `/admin/` no
+  longer uses Caddy Basic Auth. It now redirects to a login form at `/admin/login` served
+  by the editor (`deploy/arrakis/5050-editor-server.js`), which sets an HMAC-signed
+  `5050_session` cookie (`HttpOnly; Secure; SameSite=Lax; Max-Age=31536000`) — editors stay
+  signed in ~1 year; a "Sign out" link clears it. Secrets `EDITOR_PASSWORD` + `SESSION_SECRET`
+  live in `/etc/5050-malaysia-editor.env` on Arrakis (root:root, 600, NOT in git), wired via
+  `EnvironmentFile=` on `5050-malaysia-editor.service` in `arrakis-infra/nixos/configuration.nix`.
+  Rotating `SESSION_SECRET` invalidates all sessions. Runbook: `deploy/arrakis/EDITOR-SESSION-AUTH.md`.
+- **Editor password rotated** (username still `admin`). New bcrypt hash was live in the
+  Caddyfile as Basic Auth, and is also the current `EDITOR_PASSWORD`. Stored on the host env
+  file; **still needs saving to 1Password** (blocked: `op` here is a service account only —
+  needs an interactive `op signin` to the personal account).
+- **Editor test suite** at `deploy/arrakis/editor.test.mjs` (16 tests incl. the session auth;
+  runs the real server against an isolated content copy with a bare git remote).
+- **Mobile hamburger nav** added (links no longer vanish on mobile) and **footer logo** fixed
+  to match the nav (36px, dark/light inverse swap) — both live.
+- **Dead `http://168.144.107.250` raw-IP editor route removed** from the Caddyfile.
+- Arrakis-infra `Caddyfile` + `nixos/configuration.nix` edits were committed this session
+  (preserving the unrelated dirty `mrx-compose.yml` / `hermes/`).
+
+---
+
 **2026-07-17 23:07 WIB (Asia/Jakarta).** Mission: 50-50 Malaysia is **live** on Arrakis at
 `https://5050malaysia.com` — the WordPress→Hugo migration and DNS cutover are done. This
 session verified the cutover, added a dark/light theme toggle, removed the old GitHub

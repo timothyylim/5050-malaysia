@@ -7,6 +7,7 @@
  * deploy key, so editors never need a GitHub account.
  */
 const http = require("node:http");
+const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
@@ -17,6 +18,82 @@ const sourceDir = process.env.SOURCE_DIR || "/home/tim/5050-malaysia-src";
 const profilesDir = path.join(sourceDir, "content", "profiles");
 const industriesDir = path.join(sourceDir, "content", "industries");
 const sshKey = process.env.GITHUB_DEPLOY_KEY || "/home/tim/.ssh/5050-malaysia-deploy";
+
+/* --- Session auth (dependency-free) --------------------------------------
+ * The editor gates /admin itself so login can persist ~1 year via a signed
+ * cookie, replacing Caddy HTTP Basic Auth (which browsers forget on close).
+ *
+ *   EDITOR_PASSWORD  plaintext password an editor types on the login page.
+ *   SESSION_SECRET   HMAC key used to sign session cookies.
+ *
+ * If either is unset the server still starts, but logs a warning and FAILS
+ * CLOSED: every gated /admin route is rejected until both are configured.
+ */
+const EDITOR_PASSWORD = process.env.EDITOR_PASSWORD || "";
+const SESSION_SECRET = process.env.SESSION_SECRET || "";
+const AUTH_CONFIGURED = Boolean(EDITOR_PASSWORD && SESSION_SECRET);
+const COOKIE_NAME = "5050_session";
+const SESSION_MAX_AGE = 31536000; // seconds ~ 1 year
+const SESSION_MAX_AGE_MS = SESSION_MAX_AGE * 1000;
+
+// Constant-time string comparison that is safe for differing lengths: both
+// inputs are hashed to a fixed-width digest before timingSafeEqual, so the
+// comparison never leaks length and never throws on a size mismatch.
+function safeEqual(a, b) {
+  const da = crypto.createHash("sha256").update(String(a)).digest();
+  const db = crypto.createHash("sha256").update(String(b)).digest();
+  return crypto.timingSafeEqual(da, db);
+}
+
+function signSession(expiryMs) {
+  const mac = crypto.createHmac("sha256", SESSION_SECRET).update(String(expiryMs)).digest("hex");
+  return `${expiryMs}.${mac}`;
+}
+
+// Verify a cookie value of the form `<expiryEpochMs>.<hexHmac>`: recompute the
+// HMAC, compare in constant time, then check the expiry.
+function sessionValid(value) {
+  if (!AUTH_CONFIGURED || !value) return false;
+  const dot = value.indexOf(".");
+  if (dot < 0) return false;
+  const expiryStr = value.slice(0, dot);
+  const mac = value.slice(dot + 1);
+  if (!/^\d+$/.test(expiryStr) || !mac) return false;
+  const expected = crypto.createHmac("sha256", SESSION_SECRET).update(expiryStr).digest("hex");
+  if (!safeEqual(mac, expected)) return false;
+  return Date.now() <= Number(expiryStr);
+}
+
+function parseCookies(header) {
+  const out = {};
+  if (!header) return out;
+  for (const part of header.split(";")) {
+    const eq = part.indexOf("=");
+    if (eq < 0) continue;
+    out[part.slice(0, eq).trim()] = part.slice(eq + 1).trim();
+  }
+  return out;
+}
+
+function isAuthed(req) {
+  if (!AUTH_CONFIGURED) return false; // fail closed
+  return sessionValid(parseCookies(req.headers.cookie)[COOKIE_NAME]);
+}
+
+const loginHtml = (error) => `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>50-50 Malaysia · Editor login</title><meta name="robots" content="noindex">
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:#27273e;background:#f7f7fb;line-height:1.45}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.card{background:#fff;border:1px solid #e5e5ef;border-radius:14px;box-shadow:0 8px 28px rgba(42,42,90,.05);padding:28px 26px;width:100%;max-width:360px}.logo{height:34px;width:auto;display:block;margin:0 auto 18px}h1{font-size:18px;margin:0 0 4px;text-align:center}.intro{color:#73738a;margin:0 0 20px;font-size:14px;text-align:center}label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}input[type=password]{width:100%;border:1px solid #d9d9e7;border-radius:8px;padding:10px 11px;font:inherit;color:inherit;background:#fff}.save{width:100%;background:#5f5fd3;color:#fff;border:0;border-radius:8px;padding:11px 17px;font-weight:700;cursor:pointer;margin-top:16px}.error{background:#fdecec;border:1px solid #f4c7c7;color:#a12626;border-radius:8px;padding:10px 11px;font-size:13px;margin:0 0 16px}
+</style></head><body>
+<form class="card" method="POST" action="/admin/login">
+<img class="logo" src="/assets/logo.svg" alt="50-50 Malaysia">
+<h1>Private editor</h1><p class="intro">Sign in to edit the expert directory.</p>
+${error ? `<p class="error" role="alert">${error}</p>` : ""}
+<label for="password">Password</label>
+<input id="password" name="password" type="password" autocomplete="current-password" autofocus required>
+<button class="save" type="submit">Sign in</button>
+</form></body></html>`;
 
 function json(res, status, value) {
   const body = JSON.stringify(value);
@@ -134,7 +211,7 @@ const editorHtml = `<!doctype html>
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:#27273e;background:#f7f7fb;line-height:1.45}*{box-sizing:border-box}body{margin:0}.top{background:#fff;border-bottom:1px solid #e5e5ef;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{height:34px;width:auto}.top h1{font-size:15px;margin:0;color:#6a6a80;font-weight:500}.shell{max-width:1100px;margin:0 auto;padding:28px 20px 60px}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px}.panel,.card{background:#fff;border:1px solid #e5e5ef;border-radius:14px;box-shadow:0 8px 28px rgba(42,42,90,.05)}.panel{padding:14px}.panel-head{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 12px}.panel h2{font-size:14px;margin:0}.new{border:0;border-radius:8px;background:#5f5fd3;color:white;padding:8px 11px;font-weight:700;cursor:pointer}.search{width:100%;border:1px solid #ddddec;border-radius:8px;padding:9px 10px;margin-bottom:10px;font:inherit}.items{max-height:65vh;overflow:auto}.item{display:block;width:100%;text-align:left;border:0;background:none;border-radius:8px;padding:10px;cursor:pointer;color:inherit}.item:hover,.item.active{background:#f0f0ff}.item strong{display:block;font-size:14px}.item small{display:block;color:#77778d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card{padding:24px}.card h2{margin:0 0 4px;font-size:22px}.intro{color:#73738a;margin:0 0 22px;font-size:14px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin-bottom:16px}.field.full{grid-column:1/-1}label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}input[type=text],input[type=email],textarea{width:100%;border:1px solid #d9d9e7;border-radius:8px;padding:10px 11px;font:inherit;color:inherit;background:#fff}textarea{min-height:115px;resize:vertical}.hint{font-size:12px;color:#77778d;margin:5px 0 0}.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:7px;border:1px solid #d9d9e7;border-radius:8px;padding:11px;max-height:190px;overflow:auto}.checks label{font-weight:500;margin:0;display:flex;gap:7px;align-items:flex-start}.actions{display:flex;align-items:center;gap:12px;border-top:1px solid #eeeef5;padding-top:18px;margin-top:4px}.save{background:#5f5fd3;color:white;border:0;border-radius:8px;padding:11px 17px;font-weight:700;cursor:pointer}.status{font-size:13px;color:#5f5f76}.empty{padding:48px 16px;text-align:center;color:#77778d}@media(max-width:760px){.layout{grid-template-columns:1fr}.items{max-height:240px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.top{padding:15px}.shell{padding:18px 12px}}
 </style></head><body>
-<header class="top"><img class="logo" src="/assets/logo.svg" alt="50-50 Malaysia"><h1>Private editor · expert directory</h1></header>
+<header class="top"><img class="logo" src="/assets/logo.svg" alt="50-50 Malaysia"><h1>Private editor · expert directory</h1><a href="/admin/logout" style="font-size:13px;color:#5f5fd3;text-decoration:none;font-weight:600">Sign out</a></header>
 <main class="shell"><div class="layout"><aside class="panel"><div class="panel-head"><h2>Experts</h2><button class="new" id="new">New expert</button></div><input class="search" id="search" placeholder="Search experts…" autocomplete="off"><div class="items" id="items"></div></aside>
 <section class="card"><h2 id="heading">Choose an expert</h2><p class="intro" id="intro">Select a profile to edit it, or create a new expert.</p><form id="form" hidden><div class="form-grid"><div class="field"><label for="title">Name</label><input id="title" required type="text"><p class="hint">The expert's full name.</p></div><div class="field"><label for="slug">Web address</label><input id="slug" required type="text"><p class="hint">Use lowercase words separated by hyphens. Keep unchanged when editing.</p></div><div class="field full"><label>Industries</label><div class="checks" id="industries"></div><p class="hint">Choose every relevant field.</p></div><div class="field"><label for="role">Role &amp; organisation</label><input id="role" type="text"></div><div class="field"><label for="specialisation">Specialisation</label><input id="specialisation" type="text"></div><div class="field"><label for="email">Email</label><input id="email" type="email"></div><div class="field"><label for="phone">Phone</label><input id="phone" type="text"></div><div class="field full"><label for="body">Internal notes</label><textarea id="body"></textarea><p class="hint">Optional notes for the directory team; not shown publicly.</p></div><div class="field full"><label><input id="draft" type="checkbox"> Hide this profile from the public directory</label></div></div><div class="actions"><button class="save" type="submit">Save and publish</button><span class="status" id="status" role="status"></span></div></form></section></div></main>
 <script>
@@ -153,6 +230,43 @@ $('form').onsubmit=async e=>{e.preventDefault();$('status').textContent='Saving�
 async function handler(req, res) {
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
   try {
+    // --- Auth endpoints (public, not gated) ---
+    if (url.pathname === "/admin/login") {
+      if (req.method === "GET") {
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+        return res.end(loginHtml(""));
+      }
+      if (req.method === "POST") {
+        const params = new URLSearchParams(await readBody(req));
+        const password = params.get("password") || "";
+        if (!AUTH_CONFIGURED) {
+          res.writeHead(500, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+          return res.end(loginHtml("Login is not configured. Contact the administrator."));
+        }
+        if (!safeEqual(password, EDITOR_PASSWORD)) {
+          res.writeHead(401, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+          return res.end(loginHtml("Incorrect password. Please try again."));
+        }
+        const cookie = `${COOKIE_NAME}=${signSession(Date.now() + SESSION_MAX_AGE_MS)}; HttpOnly; Secure; SameSite=Lax; Path=/admin; Max-Age=${SESSION_MAX_AGE}`;
+        res.writeHead(302, { "Set-Cookie": cookie, "Location": "/admin/", "Cache-Control": "no-store" });
+        return res.end();
+      }
+    }
+    if (req.method === "GET" && url.pathname === "/admin/logout") {
+      const cleared = `${COOKIE_NAME}=; HttpOnly; Secure; SameSite=Lax; Path=/admin; Max-Age=0`;
+      res.writeHead(302, { "Set-Cookie": cleared, "Location": "/admin/login", "Cache-Control": "no-store" });
+      return res.end();
+    }
+
+    // --- Auth gate: everything else under /admin requires a valid session ---
+    if (url.pathname === "/admin" || url.pathname.startsWith("/admin/")) {
+      if (!isAuthed(req)) {
+        if (url.pathname.startsWith("/admin/api/")) return json(res, 401, { error: "Not authenticated" });
+        res.writeHead(302, { "Location": "/admin/login", "Cache-Control": "no-store" });
+        return res.end();
+      }
+    }
+
     if (req.method === "GET" && (url.pathname === "/admin" || url.pathname === "/admin/")) {
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
       return res.end(editorHtml);
@@ -184,4 +298,10 @@ async function handler(req, res) {
   }
 }
 
-http.createServer(handler).listen(port, host, () => console.log(`50-50 editor listening on ${host}:${port}`));
+http.createServer(handler).listen(port, host, () => {
+  console.log(`50-50 editor listening on ${host}:${port}`);
+  if (!AUTH_CONFIGURED) {
+    const missing = [!EDITOR_PASSWORD && "EDITOR_PASSWORD", !SESSION_SECRET && "SESSION_SECRET"].filter(Boolean).join(" and ");
+    console.warn(`WARNING: ${missing} unset — auth is FAIL-CLOSED; all /admin routes are rejected until configured.`);
+  }
+});

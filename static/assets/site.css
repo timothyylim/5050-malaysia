@@ -111,7 +111,7 @@ section{padding:64px 0}
 .small{font-size:14px}
 /* footer */
 footer.site{padding:44px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
-footer.site img{height:28px;width:auto;opacity:.9}
+footer.site img{height:36px;width:auto;display:block}
 footer.site .links a{margin-left:18px}
 footer.site .links a:hover{color:var(--ink)}
 .notice{background:#fff8e6;border:1px solid #f7e2a8;color:#7a5b00;font-size:13px;padding:8px 14px;border-radius:8px;display:inline-block}

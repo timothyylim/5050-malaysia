@@ -21,6 +21,26 @@
       document.documentElement.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (e) {}
     }
+    // Mobile nav dropdown: toggle the panel and keep aria-expanded in sync.
+    function toggleMenu(btn) {
+      var menu = document.getElementById('nav-menu');
+      if (!menu) return;
+      var open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    function closeMenu() {
+      var menu = document.getElementById('nav-menu');
+      var btn = document.getElementById('nav-toggle');
+      if (menu) menu.classList.remove('open');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+    // Close on link click (delegated) and on Escape.
+    document.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('#nav-menu a')) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
   </script>
 </head>
 <body>
